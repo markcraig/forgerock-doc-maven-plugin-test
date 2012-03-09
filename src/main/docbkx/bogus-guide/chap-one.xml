@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! src/main/resources/legal-notices/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2012 ForgeRock AS
+  !    
+-->
+<chapter xml:id='chap-one'
+ xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+ xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+ xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink='http://www.w3.org/1999/xlink'
+ xmlns:xinclude='http://www.w3.org/2001/XInclude'>
+ <title>Chapter One</title>
+
+ <para>This is chapter one of the <citetitle>ForgeRock Bogus Test
+ Guide</citetitle>. In the PDF, the font should be DejaVu, with
+ <emphasis>italics</emphasis>, <literal>monospace</literal>, and
+ <emphasis role="strong">bold</emphasis> characters.</para>
+ 
+ <section xml:id="section-one">
+  <title>A Section Mentioned in the Index</title>
+
+  <indexterm><primary>Section one</primary></indexterm>
+  <para>Check that the index includes a reference to this section.</para>
+  
+  <mediaobject xml:id="sample-figure">
+   <alt>A sample figure</alt>
+   <imageobject>
+    <imagedata fileref="images/sample.jpg" format="JPG" />
+   </imageobject>
+   <textobject><para>In the HTML, this text object should show up as a
+   separate page.</para></textobject>
+  </mediaobject>
+  
+  <para>In the HTML, check the link next to the above figure<footnote>
+  <para>The link should open a separate page.</para></footnote>.</para>
+ </section>
+
+ <section xml:id="commands">
+  <title>Commands</title>
+
+  <para>This product includes a command. See the <link
+  xlink:href="bogus-guide#man-command"
+  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
+  manual page</link> for details.</para>
+
+  <para>In the single page HTML, you should be able to follow the hyperlink
+  above to the manual page.</para>
+ </section>
+</chapter>

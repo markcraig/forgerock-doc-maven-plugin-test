@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! src/main/resources/legal-notices/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2012 ForgeRock AS
+  !    
+-->
+<chapter xml:id='chap-two'
+ xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+ xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+ xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink='http://www.w3.org/1999/xlink'
+ xmlns:xinclude='http://www.w3.org/2001/XInclude'>
+ <title>Chapter Two</title>
+
+ <para>This is chapter two of the <citetitle>ForgeRock Bogus Test
+ Guide</citetitle>.</para>
+ 
+ <section xml:id="section-three">
+  <title>Other Things to Check</title>
+
+  <para>In the HTML, make sure you can properly fold and unfold this
+  &lt;screen&gt; element content.</para>
+  
+ <screen>$ echo Terminal sessions are formatted with line folding for easier reading.
+ In the HTML version, double-click to toggle between the folded version and
+ the flat, copy-paste version. &gt; /dev/null</screen>
+
+ <para>Also check that the following program listing has syntax
+ highlighting.</para>
+
+ <programlisting language='java'>class Test
+{
+    public static void main(String [] args)
+    {
+        System.out.println("This is a program listing.");
+    }
+}</programlisting>
+  
+  <itemizedlist>
+   <para>In HTML output, the bullet points in this list should be orange &gt;
+   signs.</para>
+   <listitem><para>Item 1</para></listitem>
+   <listitem><para>Item 2</para></listitem>
+   <listitem><para>Item 3</para></listitem>
+  </itemizedlist>
+
+  <para>Check that the layout of everything in
+  <filename>target/site/doc</filename> looks okay, that all formats are
+  present, and that none of the file names are broken. The PDF version of
+  this guide should be called <filename>ForgeRock-Bogus-Guide.pdf</filename>
+  for example.</para>
+ </section>
+</chapter>
