@@ -90,6 +90,15 @@
     <configuration>
      <projectName>ForgeRock</projectName>
      <googleAnalyticsId>UA-xxxxxxxx-x</googleAnalyticsId>
+<!--
+     <excludes>
+      <exclude>epub</exclude>
+      <exclude>html</exclude>
+      <exclude>man</exclude>
+      <exclude>pdf</exclude>
+      <exclude>rtf</exclude>
+     </excludes>
+-->
     </configuration>
     <executions>
      <execution>
