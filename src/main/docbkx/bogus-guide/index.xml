@@ -33,7 +33,7 @@
   <title>ForgeRock Bogus Test Guide</title>
   <subtitle>(Check the author's surnames.)</subtitle>
   <abstract>
-   <para>Guide for testing the <literal>doc-build-plugin</literal>.</para>
+   <para>Guide for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
   </abstract>
   <copyright>
    <year>2012</year>

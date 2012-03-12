@@ -1,6 +1,6 @@
-# ForgeRock doc-build-plugin-test
+# ForgeRock Doc Build Maven Plugin Tests
 
-The ForgeRock [doc-build-plugin](https://github.com/markcraig/doc-build-plugin)
+The ForgeRock [forgerock-doc-maven-plugin](https://github.com/markcraig/forgerock-doc-maven-plugin)
 provides a centralized solution to build core documentation output.
 
 This test project runs the plugin on a trivial documentation set designed to

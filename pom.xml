@@ -29,12 +29,12 @@
  </parent>
 
  <groupId>commons.forgerock.org</groupId>
- <artifactId>doc-build-plugin-test</artifactId>
+ <artifactId>forgerock-doc-maven-plugin-test</artifactId>
  <version>0.0.1-SNAPSHOT</version>
  <packaging>pom</packaging>
 
  <name>ForgeRock Doc Build Maven Plugin Test</name>
- <description>Trivial core documentation set to test doc-build-plugin features</description>
+ <description>Trivial core documentation set to test forgerock-doc-maven-plugin features</description>
  <url>http://docs.forgerock.org</url>
 
  <licenses>
@@ -84,8 +84,8 @@
   <plugins>
    <plugin>
     <groupId>org.forgerock.commons</groupId>
-    <artifactId>doc-build-plugin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>forgerock-doc-maven-plugin</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
     <inherited>false</inherited>
     <configuration>
      <projectName>ForgeRock</projectName>
