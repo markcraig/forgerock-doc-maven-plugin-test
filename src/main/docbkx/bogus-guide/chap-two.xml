@@ -68,5 +68,27 @@
   present, and that none of the file names are broken. The PDF version of
   this guide should be called <filename>ForgeRock-Bogus-Guide.pdf</filename>
   for example.</para>
+
+  <variablelist>
+   <para>Some links.</para>
+   <varlistentry>
+    <term>Link to ForgeRock</term>
+    <listitem>
+     <para><link xlink:href="http://forgerock.com/">ForgeRock.com</link></para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Broken Link</term>
+    <listitem>
+     <para><link xlink:href="http://broken.link/">Broken Link</link></para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Example Link</term>
+    <listitem>
+     <para><link xlink:href="http://www.example.com/">Example.com</link></para>
+    </listitem>
+   </varlistentry>
+  </variablelist>
  </section>
 </chapter>
