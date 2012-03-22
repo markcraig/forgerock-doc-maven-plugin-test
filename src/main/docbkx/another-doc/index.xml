@@ -23,28 +23,22 @@
   !      Copyright 2012 ForgeRock AS
   !    
 -->
-<book xml:id='bogus-guide'
+<book xml:id='another-doc'
  xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
  xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
  xmlns:xlink='http://www.w3.org/1999/xlink'
  xmlns:xinclude='http://www.w3.org/2001/XInclude'>
  <info>
-  <title>ForgeRock Bogus Test Guide</title>
-  <subtitle>(Check the author's surnames.)</subtitle>
+  <title>Another ForgeRock Doc</title>
   <abstract>
-   <para>Guide for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
+   <para>Another doc for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
   </abstract>
   <copyright>
    <year>2012</year>
    <holder>ForgeRock AS</holder>
   </copyright>
   <authorgroup>
-   <author>
-    <personname>
-     <firstname>Mark</firstname><surname>Craig</surname>
-    </personname>
-   </author>
    <author>
     <personname>
      <firstname>UTF-8</firstname><surname>Šúṛɲåṃȇ</surname>
@@ -57,9 +51,66 @@
  </info>
 
  <toc />
- 
- <xinclude:include href='chap-one.xml' />
- <xinclude:include href='chap-two.xml' />
+
+ <chapter xml:id="chap-links">
+  <title>Link Checks</title>
+
+  <para>This chapter has link targets. It links to content in the
+  <citetitle>Bogus Guide</citetitle>, the <link
+  xlink:href="bogus-guide#man-command"
+  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
+  manual page</link>.</para>
+
+  <para>Here's a local link to the same content, the <link
+  xlink:href="another-doc#man-command"
+  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
+  manual page</link>.</para>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section xml:id="another-section">
+   <title>Another Important Section</title>
+   <indexterm><primary>Fake index entry</primary></indexterm>
+
+   <para>This is a section in the doc.</para>
+   <para>If you made it here from the HTML version of the <citetitle>Bogus
+   Guide</citetitle>, then Olinks seem to work.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+ </chapter>
 
  <reference>
   <title>Reference</title>

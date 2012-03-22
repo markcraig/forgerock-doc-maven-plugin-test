@@ -55,8 +55,8 @@
   <para>The link should open a separate page.</para></footnote>.</para>
  </section>
 
- <section xml:id="commands">
-  <title>Commands</title>
+ <section xml:id="olink-checks">
+  <title>Olink Checks</title>
 
   <para>This product includes a command. See the <link
   xlink:href="bogus-guide#man-command"
@@ -65,5 +65,10 @@
 
   <para>In the single page HTML, you should be able to follow the hyperlink
   above to the manual page.</para>
+
+  <para>Here's a link to another doc, <link
+  xlink:href="another-doc#another-section"
+  xlink:role="http://docbook.org/xlink/role/olink"><citetitle>Another
+  Important Section</citetitle></link>.</para>
  </section>
 </chapter>
