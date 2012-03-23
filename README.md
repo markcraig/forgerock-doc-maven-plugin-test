@@ -13,6 +13,12 @@ To run the tests:
 2.  Review the output under `target/site/doc/`. Check at least .pdf as well as
     single page and chunked HTML.
 
+To run the release test:
+
+1.  Uncomment the release goal in the pom.xml.
+2.  Turn off draft mode and provide the required release version as in
+    `mvn clean site -DisDraftMode=no -DreleaseVersion=1.0.0`.
+
 * * *
 This work is licensed under the Creative Commons
 Attribution-NonCommercial-NoDerivs 3.0 Unported License.
