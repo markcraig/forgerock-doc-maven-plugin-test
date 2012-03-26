@@ -17,8 +17,10 @@ To run the release test:
 
 1.  Turn off draft mode, provide a release version, and specify the
     docs.forgerock.org Goodle Analytics ID for the build:
-    `mvn -DisDraftMode=no -DreleaseVersion=1.0.0 -D"gaId=UA-23412190-14" \
-     clean site org.forgerock.commons:forgerock-doc-maven-plugin:release`
+
+        mvn -DisDraftMode=no -DreleaseVersion=1.0.0 -D"gaId=UA-23412190-14" \
+        clean site org.forgerock.commons:forgerock-doc-maven-plugin:release
+
 2.  Review the output under `target/release/`.
 
 * * *
