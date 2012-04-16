@@ -64,6 +64,7 @@
  <reference>
   <title>Reference</title>
   <xinclude:include href="../shared/man-command.xml" />
+  <xinclude:include href="../shared/man-test.xml" />
  </reference>
 
  <index />

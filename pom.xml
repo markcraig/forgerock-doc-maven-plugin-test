@@ -30,7 +30,7 @@
 
  <groupId>commons.forgerock.org</groupId>
  <artifactId>forgerock-doc-maven-plugin-test</artifactId>
- <version>0.6.0-SNAPSHOT</version>
+ <version>1.0.0</version>
  <packaging>pom</packaging>
 
  <name>ForgeRock Doc Build Maven Plugin Test</name>
@@ -86,7 +86,7 @@
    <plugin>
     <groupId>org.forgerock.commons</groupId>
     <artifactId>forgerock-doc-maven-plugin</artifactId>
-    <version>0.6.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <inherited>false</inherited>
     <configuration>
      <projectName>ForgeRock</projectName>
