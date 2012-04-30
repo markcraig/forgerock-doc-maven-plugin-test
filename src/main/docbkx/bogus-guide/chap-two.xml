@@ -44,17 +44,196 @@
  In HTML documents click the [-] image for a flat, copy-paste version. Click
  the [+] image for an expanded, line-wrapped version. &gt; /dev/null</screen>
 
- <para>Also check that the following program listing has syntax
- highlighting.</para>
+ <para>Also check that the program listings have syntax highlighting.
+ Not all varieties are necessarily actively highlighted, yet.</para>
 
- <programlisting language='java'>class Test
+ <para>ACI program listing:</para>
+
+ <programlisting language="aci">aci: (target="ldap:///dc=example,dc=com") (targetattr =
+ "* || +")(version 3.0;acl "Admins can run amok"; allow(
+ all, proxy, import, export) groupdn =
+ "ldap:///cn=Directory Administrators,ou=Groups,dc=example,dc=com";)</programlisting>
+
+ <para>CSV program listing:</para>
+
+ <programlisting language="csv">firstName,uid,"lastName","email","employeeNumber",password,"sunrise","sunset","active"
+"Darth","DDOE","Doe","doe@...","123456","Z29vZA==","2011-11-30T...","2011-12-23T...","TRUE"</programlisting>
+
+ <para>HTML program listing:</para>
+
+ <programlisting language="html">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Fedlet Sample Application&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;%
+    // BEGIN : following code is a must for Fedlet (SP) side application
+    Map map;
+    try {
+        // invoke the Fedlet processing logic. this will do all the
+        // necessary processing conforming to SAMLv2 specifications,
+        // such as XML signature validation, Audience and Recipient
+        // validation etc.  
+        map = SPACSUtils.processResponseForFedlet(request, response);
+        response.sendRedirect(&quot;myapp.jsp&quot;);
+    } catch (SAML2Exception sme) {
+        SAMLUtils.sendError(request, response,
+            response.SC_INTERNAL_SERVER_ERROR, &quot;failedToProcessSSOResponse&quot;,
+            sme.getMessage());
+        return;
+    } catch (IOException ioe) {
+        SAMLUtils.sendError(request, response,
+            response.SC_INTERNAL_SERVER_ERROR, &quot;failedToProcessSSOResponse&quot;,
+            ioe.getMessage());
+        return;
+    } catch (SessionException se) {
+        SAMLUtils.sendError(request, response, 
+            response.SC_INTERNAL_SERVER_ERROR, &quot;failedToProcessSSOResponse&quot;,
+            se.getMessage());
+        return;
+    } catch (ServletException se) {
+        SAMLUtils.sendError(request, response,
+            response.SC_BAD_REQUEST, &quot;failedToProcessSSOResponse&quot;,
+            se.getMessage());
+        return;
+    }
+    // END : code is a must for Fedlet (SP) side application
+%&gt;
+&lt;/body&gt;
+&lt;/html&gt;</programlisting>
+
+ <para>HTTP program listing:</para>
+
+ <programlisting language="http">
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 123
+ETag: "0"
+...
+
+[<replaceable>JSON representation of the managed object</replaceable>]</programlisting>
+
+ <para>INI program listing:</para>
+
+ <programlisting language="ini">com.sun.identity.distauth.cluster=
+ http://das.example.com:8080/das/UI/Login,
+ http://das2.example.com:8080/das/UI/Login</programlisting>
+
+ <para>Java program listing:</para>
+
+ <programlisting language="java">class Test
 {
     public static void main(String [] args)
     {
         System.out.println("This is a program listing.");
     }
 }</programlisting>
-  
+
+ <para>JavaScript program listing:</para>
+
+ <programlisting language="javascript">{
+    "enabled" : false,
+    "type": "cron",
+    "schedule": "0 0/1 * * * ?",
+    "invokeService": "org.forgerock.openidm.sync",
+    "invokeContext": {
+        "action": "reconcile",
+        "mapping": "systemXmlfileAccounts_managedUser"
+    }
+}</programlisting>
+
+ <para>LDIF program listing:</para>
+
+ <programlisting language="ldif">dn: uid=user.0,ou=People,dc=example,dc=org
+changetype: modify
+add: initials
+initials: AAA
+-
+delete: initials
+initials: ASA
+-
+add: description
+description: This is the new description for Aaccf Amar.
+-
+delete: description
+description: This is the description for Aaccf Amar.
+</programlisting>
+
+ <para>NONE program listing:</para>
+
+ <programlisting language="none">
+-D"com.iplanet.am.naming.map.site.to.server=https://lb.example.com:443/openam=
+http://server1.example.com:8080/openam=http://server2.example.com:8080/openam"</programlisting>
+
+ <para>XML program listing:</para>
+
+ <programlisting language="xml">&lt;ri:__ACCOUNT__&gt;
+   &lt;icf:__UID__&gt;12345&lt;/icf:__UID__&gt;
+   &lt;icf:__NAME__&gt;Daffy Duck&lt;/icf:__NAME__&gt;
+   &lt;icf:__PASSWORD__&gt;123456789&lt;/icf:__PASSWORD__&gt;
+   &lt;ri:email&gt;daffy.duck@forgerock.com&lt;/ri:email&gt;
+   &lt;ri:lastname&gt;Duck&lt;/ri:lastname&gt;
+   &lt;ri:firstname&gt;Daffy&lt;/ri:firstname&gt;
+&lt;/ri:__ACCOUNT__&gt;</programlisting>
+
+ <para>Blank language attribute program listing:</para>
+
+ <programlisting>
+MMMMMMMMMMMMMMMMMMMMMMMMM87IIIIIIIIIII$DMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMM8?IIIIIIIIIIIIIII?IIII8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMNIIIIIIIIIIII?~~~~~~~~~~~~~~~~ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMIIIIIIIIIIII~~~~~~~~~~~~~~~~~~~~~=+MMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMIIIIIIIIIIII~~~~~~~~~~~~~~~~~~~~~~~~~~~MMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMIIIIIIIIIIII~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMIIIIIIIIIIII~~~~~~~~~,:,::::::,,:~~~~~~~~~~MMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMIIIIIIIIIIII~~~~~:,,,,,,,,,,,,,,,,,,,::~~~~~7MMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMIIIIIIIIIIII=~::,,,,,,,,,,,,,,,,,,,,,,,,,,::~~MMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMIIIIIIIIIIII,:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,INMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMM7IIIIIIIIII?=:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IIMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMM7IIIIIIIII===:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:IIIDMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIIIII====:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:IIIMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIIII+====:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+IIIMMMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIIII=====:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,III$MMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,~IIIMMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:IIIMMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,~IIIMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:IIIMMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:=II7MMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=+IIMMMMMMMMMMMMMMM
+MMMMMMMMMIIIIIII======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,==II7MMMMMMMMMMMMMM
+MMMMMMMMMIIIIII?======:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:==IIIMMMMMMMMMMMMMM
+MMMMMMMMMIIIIII?======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===IIIIMMMMMMMMMMMMM
+MMMMMMMMMIIIIII?=======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===IIII7MMMMMMMMMMMM
+MMMMMMMMMIIIIII?=======,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,====IIIIIOMMMMMMMMMMM
+MMMMMMMMMIIIIII?========,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:=====IIIIIIMMMMMMMMMMM
+MMMMMMMMMIIIIII+=========,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=======IIIIIIMMMMMMMMMMM
+MMMMMMMMMIIIIII+==========,,,,,,,,,,,,,,,,,,,,,,,,,,,~=========+IIIIIDMMMMMMMMMM
+MMMMMMMMMIIIIII+===========~,,,,,,,,,,,,,,,,,,,,,,:============+IIIIIDMMMMMMMMMM
+MMMMMMMMMIIIIII+=============~,,,,,,,,,,,,,,,,,,~==============IIIIIINMMMMMMMMMM
+MMMMMMMMM$IIIII+================:,,,,,,,,,,,,,================+IIIIIIDMMMMMMMMMM
+MMMMMMMMMMIIIII+====================:,,,,,,~==================IIIIIIIZMMMMMMMMMM
+MMMMMMMMMMIIIII+=============================================IIIIIIII7MMMMMMMMMM
+MMMMMMMMMMMIIII+============================================IIIIIIIIIIMMMMMMMMMM
+MMMMMMMMMMMMIII+===========================================IIIIIIIIIIIMMMMMMMMMM
+MMMMMMMMMMMM8II?=========================================IIIIIIIIIIII8MMMMMMMMMM
+MMMMMMMMMMMMMMII======================================IIIIIIIIIIIIIIIMMMMMMMMMMM
+MMMMMMMMMMMMMMMI====================================IIIIIIIIIIIIIIIINMMMMMMMMMMM
+MMMMMMMMMMMMMMMMO================================?IIIIIIIIIIIIIIIIIOMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMM7?============================IIIIIIIIIIIIIIIIIIIDMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM?II========================IIIIIIIIIIIIIIIIIIIIMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMIIII?==================?IIIIIIIIIIIIIIIIIIIIDMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMIIIIIII+============IIIIIIIIIIIIIIIIIIIIZMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMM7IIIIIIIIIII??IIIIIIIIIIIIIIIIIIIIIIIDMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII7MMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMM?IIIIIIIIIIIIIIIIIIIIIIIIIIIZMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMIIIIIIIIIIIIIIIIIIIIIIIIDMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM7IIIIIIIIIIIIIIIIIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8IIIIIIIIIIIIDMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8ODMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+</programlisting>
+
   <itemizedlist>
    <para>In HTML output, the bullet points in this list should be orange &gt;
    signs.</para>
