@@ -70,6 +70,28 @@
    <title>Another Section</title>
 
    <para>This is a section in the doc.</para>
+
+   <important>
+    <para>This is something important.</para>
+   </important>
+
+   <note>
+    <para>This is a note.</para>
+   </note>
+
+   <tip>
+    <para>Spell check your documentation updates before committing them.</para>
+   </tip>
+
+   <caution>
+    <para>95 º C water can be hot, especially if you pour it on your lap!</para>
+   </caution>
+
+   <warning>
+    <para>If you stick your fork in a live electrical outlet, natural selection
+    might cull you.</para>
+   </warning>
+
   </section>
 
   <section>
