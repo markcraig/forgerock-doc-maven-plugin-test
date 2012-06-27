@@ -61,11 +61,6 @@
   xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
   manual page</link>.</para>
 
-  <para>Here's a local link to the same content, the <link
-  xlink:href="another-doc#man-command"
-  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
-  manual page</link>.</para>
-
   <section>
    <title>Another Section</title>
 
@@ -133,11 +128,6 @@
    <para>This is a section in the doc.</para>
   </section>
  </chapter>
-
- <reference>
-  <title>Reference</title>
-  <xinclude:include href="../shared/man-command.xml" />
- </reference>
 
  <index />
 </book>
