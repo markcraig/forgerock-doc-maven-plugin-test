@@ -19,6 +19,7 @@ To run the release test:
     docs.forgerock.org Goodle Analytics ID for the build:
 
         mvn -DisDraftMode=no -DreleaseVersion=1.0.0 -D"gaId=UA-23412190-14" \
+        -D"releaseDate=Software release date: January 1, 1970" \
         clean site org.forgerock.commons:forgerock-doc-maven-plugin:release
 
 2.  Review the output under `target/release/`.

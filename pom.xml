@@ -58,6 +58,11 @@
  <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <gaId>UA-xxxxxxxx-x</gaId>
+  <!-- Release date is set at release build time. Something like:
+  -D"releaseDate=Software release date: January 1, 1970"
+  At all other times, the release date should be empty. -->
+  <releaseDate />
+  <softwareReleaseDate>${releaseDate}</softwareReleaseDate>
  </properties>
 
  <inceptionYear>2012</inceptionYear>
