@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! src/main/resources/legal-notices/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2012 ForgeRock AS
+  !    
+-->
+<book xml:id='child'
+ xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+ xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+ xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink='http://www.w3.org/1999/xlink'
+ xmlns:xinclude='http://www.w3.org/2001/XInclude'>
+ <info>
+  <title>ForgeRock Child Test Guide</title>
+  <abstract>
+   <para>Guide for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
+  </abstract>
+  <copyright>
+   <year>2012</year>
+   <holder>ForgeRock AS</holder>
+  </copyright>
+  <authorgroup>
+   <author>
+    <personname>
+     <firstname>Mark</firstname><surname>Craig</surname>
+    </personname>
+   </author>
+  </authorgroup>
+  <xinclude:include href="../legal.xml" />
+  <date><?dbtimestamp format="B d, Y"?></date>
+  <pubdate>Publication date: <?dbtimestamp format="B d, Y"?></pubdate>
+  <releaseinfo><?eval ${softwareReleaseDate}?></releaseinfo>
+ </info>
+
+ <toc />
+
+ <chapter>
+  <title>Child Test Chapter</title>
+
+  <para>This document is buried down in a child module. It includes a photo
+  that was featured in Wikipedia.</para>
+
+  <mediaobject xml:id="figure-mushrooms">
+   <alt>This is a picture of Armillaria luteobubalina.</alt>
+   <imageobject>
+    <imagedata fileref="images/Armillaria_luteobubalina_67510.jpg" format="JPG" />
+   </imageobject>
+   <textobject><para>This is a picture of Armillaria luteobubalina.
+   The original was <link xlink:show="new"
+   xlink:href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Armillaria_luteobubalina_67510.jpg/640px-Armillaria_luteobubalina_67510.jpg"
+   >downloaded from Wikipedia</link>.</para></textobject>
+   <caption>
+    <para>The honey mushroom Armillaria luteobubalina Watling &amp; Kile.
+    Specimen photographed in Dandenong Ranges National Park, Victoria,
+    Australia. This image is Image Number 67510 at Mushroom Observer, a source
+    for mycological images, and was shared CC-SA 3.0 Unported. Copyright 2009
+    Lord Mayonnaise at Mushroom Observer.</para>
+   </caption>
+  </mediaobject>
+
+  <itemizedlist>
+   <para>This chapter also includes a couple of links:</para>
+   <listitem>
+    <para>A link to the <link
+    xlink:href="http://en.wikipedia.org/wiki/Armillaria_luteobubalina"
+    xlink:show="new">Wikipedia article on Armillaria luteobubalina</link></para>
+   </listitem>
+   <listitem>
+    <para>A link to the <link xlink:href="http://forgerock.org/" xlink:show="new"
+    >ForgeRock Community Site</link></para>
+   </listitem>
+  </itemizedlist>
+ </chapter>
+
+ <index />
+</book>
