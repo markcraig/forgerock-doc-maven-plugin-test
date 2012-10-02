@@ -78,7 +78,7 @@
   </mediaobject>
 
   <itemizedlist>
-   <para>This chapter also includes a couple of links:</para>
+   <para>This chapter also includes several links:</para>
    <listitem>
     <para>A link to the <link
     xlink:href="http://en.wikipedia.org/wiki/Armillaria_luteobubalina"
@@ -87,6 +87,11 @@
    <listitem>
     <para>A link to the <link xlink:href="http://forgerock.org/" xlink:show="new"
     >ForgeRock Community Site</link></para>
+   </listitem>
+   <listitem>
+    <para>A broken link to a <link xlink:href="http://busted.link/"
+    xlink:show="new">site that does not exist</link>.</para>
+    <para>Linktester should complain about this one.</para>
    </listitem>
   </itemizedlist>
  </chapter>
