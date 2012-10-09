@@ -71,4 +71,112 @@
   xlink:role="http://docbook.org/xlink/role/olink"><citetitle>Another
   Important Section</citetitle></link>.</para>
  </section>
+
+ <section xml:id="docs-32">
+  <title>A Long OrderedList</title>
+
+  <orderedlist>
+   <para>This is a long OrderedList.</para>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+   <listitem><para>An item</para></listitem>
+  </orderedlist>
+ </section>
 </chapter>
