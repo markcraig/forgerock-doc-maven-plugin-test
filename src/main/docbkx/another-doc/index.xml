@@ -228,5 +228,7 @@
   </section>
  </chapter>
 
+ <xinclude:include href='chap-jcite.xml' />
+
  <index />
 </book>
