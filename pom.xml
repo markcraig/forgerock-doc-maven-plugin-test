@@ -146,6 +146,9 @@
       <exclude>rtf</exclude>
      </excludes>
 -->
+<!--
+     <useGeneratedSources>true</useGeneratedSources>
+-->
     </configuration>
     <executions>
 <!--
