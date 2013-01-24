@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2012 ForgeRock AS
+  !      Copyright 2012-2013 ForgeRock AS
   !    
 -->
 <chapter xml:id='chap-one'
@@ -53,6 +53,165 @@
   
   <para>In the HTML, check the link next to the above figure<footnote>
   <para>The link should open a separate page.</para></footnote>.</para>
+ </section>
+
+ <section xml:id="section-with-table">
+  <title>A Section With a Table</title>
+
+  <para>A table pilfered from the OpenDJ docs.</para>
+
+  <table pgwide="1" rules="none">
+   <title>Default Indexes</title>
+   <tgroup cols="7">
+   <colspec colnum="2" colname="c2" />
+   <colspec colnum="7" colname="c7" />
+    <thead>
+     <row>
+      <entry>Index</entry>
+      <entry>Approximate</entry>
+      <entry>Equality</entry>
+      <entry>Ordering</entry>
+      <entry>Presence</entry>
+      <entry>Substring</entry>
+      <entry>Entry Limit</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry><literal>aci</literal></entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>cn</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>dn2id</literal></entry>
+      <entry namest="c2" nameend="c7" align="center">Non-configurable
+      internal index</entry>
+     </row>
+     <row>
+      <entry><literal>ds-sync-conflict</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>ds-sync-hist</literal></entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>entryUUID</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>givenName</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>id2children</literal></entry>
+      <entry namest="c2" nameend="c7" align="center">Non-configurable
+      internal index</entry>
+     </row>
+     <row>
+      <entry><literal>id2subtree</literal></entry>
+      <entry namest="c2" nameend="c7" align="center">Non-configurable
+      internal index</entry>
+     </row>
+     <row>
+      <entry><literal>mail</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>member</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>objectClass</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>sn</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>telephoneNumber</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>uid</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+     <row>
+      <entry><literal>uniqueMember</literal></entry>
+      <entry>-</entry>
+      <entry>Yes</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>-</entry>
+      <entry>4000</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
  </section>
 
  <section xml:id="olink-checks">
