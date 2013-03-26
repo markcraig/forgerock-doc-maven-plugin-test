@@ -178,9 +178,10 @@ http://server1.example.com:8080/openam=http://server2.example.com:8080/openam"</
    &lt;ri:firstname&gt;Daffy&lt;/ri:firstname&gt;
 &lt;/ri:__ACCOUNT__&gt;</programlisting>
 
- <para>Blank language attribute program listing:</para>
+ <example><?dbfo keep-together="always"?>
+  <para>Blank language attribute program listing:</para>
 
- <programlisting>
+  <programlisting>
 MMMMMMMMMMMMMMMMMMMMMMMMM87IIIIIIIIIII$DMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMM8?IIIIIIIIIIIIIII?IIII8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMNIIIIIIIIIIII?~~~~~~~~~~~~~~~~ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -233,6 +234,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM7IIIIIIIIIIIIIIIIIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8IIIIIIIIIIIIDMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8ODMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 </programlisting>
+  </example>
 
   <itemizedlist>
    <para>In HTML output, the bullet points in this list should be orange &gt;

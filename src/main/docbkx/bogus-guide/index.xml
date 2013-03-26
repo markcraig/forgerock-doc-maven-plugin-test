@@ -61,6 +61,7 @@
  
  <xinclude:include href='chap-one.xml' />
  <xinclude:include href='chap-two.xml' />
+ <xinclude:include href='chap-three.xml' />
 
  <reference>
   <title>Reference</title>
