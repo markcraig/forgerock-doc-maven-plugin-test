@@ -92,6 +92,7 @@
  <build>
   <plugins>
 <!-- Call Mavenized JCite directly. The dependency is not published, yet.
+     See https://code.google.com/r/markcraig-jcite/
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-antrun-plugin</artifactId>
@@ -124,13 +125,13 @@
     </executions>
     <dependencies>
      <dependency>
-      <groupId>ch.arrenbrecht.jcite</groupId>
+      <groupId>org.mcraig</groupId>
       <artifactId>jcite</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.13.0-SNAPSHOT</version>
      </dependency>
     </dependencies>
    </plugin>
--->
+ -->
    <plugin>
     <groupId>org.forgerock.commons</groupId>
     <artifactId>forgerock-doc-maven-plugin</artifactId>
