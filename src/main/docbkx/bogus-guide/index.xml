@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2012 ForgeRock AS
+  !      Copyright 2012-2013 ForgeRock AS
   !    
 -->
 <book xml:id='bogus-guide'
@@ -36,7 +36,7 @@
    <para>Guide for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
   </abstract>
   <copyright>
-   <year>2012</year>
+   <year>2012-2013</year>
    <holder>ForgeRock AS</holder>
   </copyright>
   <authorgroup>
@@ -69,5 +69,12 @@
   <xinclude:include href="../shared/man-test.xml" />
  </reference>
 
+ <appendix xml:id="appendix-short">
+  <title>Very Short Appendix</title>
+
+  <para>This is a very, very short appendix.</para>
+
+  <para>Enough said.</para>
+ </appendix>
  <index />
 </book>
