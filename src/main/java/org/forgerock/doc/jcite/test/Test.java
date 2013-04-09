@@ -20,6 +20,9 @@ package org.forgerock.doc.jcite.test;
 public final class Test {
     /**
      * Print a message, then print args one per line.
+     * <p>
+     * Here is a test using JCite in Javadoc:
+     * {@.jcite --- mainMethod}
      * @param args Program arguments.
      */
   // --- mainMethod
