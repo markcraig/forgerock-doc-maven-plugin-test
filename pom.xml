@@ -57,6 +57,7 @@
 
  <properties>
   <frDocPluginVersion>2.0.0-SNAPSHOT</frDocPluginVersion>
+  <jciteVersion>1.13.0-SNAPSHOT</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <gaId>UA-xxxxxxxx-x</gaId>
   <!-- Release date is set at release build time. Something like:
@@ -127,13 +128,13 @@
      <dependency>
       <groupId>org.mcraig</groupId>
       <artifactId>jcite</artifactId>
-      <version>1.13.0-SNAPSHOT</version>
+      <version>${jciteVersion}</version>
      </dependency>
     </dependencies>
    </plugin>
  -->
 
-   <!-- Try JCite in Javadoc, see http://www.arrenbrecht.ch/jcite/javadoc.htm
+   <!-- Try JCite in Javadoc, see http://www.arrenbrecht.ch/jcite/javadoc.htm -->
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-javadoc-plugin</artifactId>
@@ -143,13 +144,13 @@
      <tagletArtifact>
       <groupId>org.mcraig</groupId>
       <artifactId>jcite</artifactId>
-      <version>1.13.0-SNAPSHOT</version>
+      <version>${jciteVersion}</version>
      </tagletArtifact>
      <sourcepath>${project.build.sourceDirectory}</sourcepath>
      <additionalJOption>-J-Djcitesourcepath=${project.build.sourceDirectory}</additionalJOption>
     </configuration>
    </plugin>
-   -->
+
 
    <plugin>
     <groupId>org.forgerock.commons</groupId>
