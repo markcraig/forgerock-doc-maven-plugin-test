@@ -57,7 +57,7 @@
 
  <properties>
   <frDocPluginVersion>2.0.0-SNAPSHOT</frDocPluginVersion>
-  <jciteVersion>1.13.0-SNAPSHOT</jciteVersion>
+  <jciteVersion>1.13.0</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <gaId>UA-xxxxxxxx-x</gaId>
   <!-- Release date is set at release build time. Something like:
@@ -168,12 +168,10 @@
       <exclude>rtf</exclude>
      </excludes>
 -->
-<!--
      <useGeneratedSources>true</useGeneratedSources>
--->
     </configuration>
     <executions>
-<!--
+
      <execution>
       <id>run-jcite</id>
       <phase>pre-site</phase>
@@ -181,7 +179,7 @@
        <goal>jcite</goal>
       </goals>
      </execution>
--->
+
      <execution>
       <id>build-doc</id>
       <phase>pre-site</phase>
