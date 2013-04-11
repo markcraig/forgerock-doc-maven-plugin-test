@@ -89,9 +89,82 @@
   manual page</link>.</para>
 
   <section>
-   <title>Another Section</title>
+   <title>Skip These Links</title>
 
-   <para>This is a section in the doc.</para>
+   <para>This is a section in the doc with some repeated links to skip.</para>
+
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
 
   </section>
 
