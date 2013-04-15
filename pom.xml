@@ -168,7 +168,6 @@
       <exclude>rtf</exclude>
      </excludes>
 -->
-     <useGeneratedSources>true</useGeneratedSources>
     </configuration>
     <executions>
 
@@ -181,12 +180,21 @@
      </execution>
 
      <execution>
+      <id>copy-common</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>boilerplate</goal>
+      </goals>
+     </execution>
+
+     <execution>
       <id>build-doc</id>
       <phase>pre-site</phase>
       <goals>
        <goal>build</goal>
       </goals>
      </execution>
+
      <execution>
       <id>layout-doc</id>
       <phase>site</phase>
