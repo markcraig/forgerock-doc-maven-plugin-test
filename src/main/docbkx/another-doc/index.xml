@@ -329,9 +329,9 @@
 
     <varlistentry>
      <term><literal>dayofweek = "<replaceable>day</replaceable>[, <replaceable
-             >day</replaceable> ...]"</literal></term>
+             >day</replaceable> &#8230;]"</literal></term>
      <term><literal>dayofweek != "<replaceable>day</replaceable>[, <replaceable
-             >day</replaceable> ...]"</literal></term>
+             >day</replaceable> &#8230;]"</literal></term>
      <listitem>
       <para>Replace <replaceable>day</replaceable> with one of
       <literal>sun</literal>, <literal>mon</literal>, <literal>tue</literal>,
@@ -348,12 +348,19 @@
              >ldap-url</replaceable>#LDAPURL"</literal></term>
      <term><literal>userattr != <replaceable
              >ldap-url</replaceable>#LDAPURL"</literal></term>
+     <term>Whole &lt;term&gt;s on single lines:</term>
+     <term><literal>userattr = "[parent[<replaceable>child-level</replaceable>].]<replaceable>attr</replaceable>#GROUPDN|USERDN"</literal></term>
+     <term><literal>userattr != "[parent[<replaceable>child-level</replaceable>].]<replaceable>attr</replaceable>#GROUPDN|USERDN"</literal></term>
+     <term>&lt;term&gt;s split over multiple lines to fit source code in 80-column page:</term>
      <term><literal>userattr = "[parent[<replaceable
              >child-level</replaceable>].]<replaceable>attr</replaceable
              >#GROUPDN|USERDN"</literal></term>
      <term><literal>userattr != "[parent[<replaceable
              >child-level</replaceable>].]<replaceable>attr</replaceable
              >#GROUPDN|USERDN"</literal></term>
+     <term>&lt;term&gt;s split over multiple lines, no &lt;replaceable&gt; children:</term>
+     <term><literal>userattr = "[parent[child-level].]attr#GROUPDN|USERDN"</literal></term>
+     <term><literal>userattr != "[parent[child-level].]attr#GROUPDN|USERDN"</literal></term>
      <listitem>
       <para>The <literal>userattr</literal> subject specifies an attribute
       that must match on both the bind entry and the target of the ACI.</para>
