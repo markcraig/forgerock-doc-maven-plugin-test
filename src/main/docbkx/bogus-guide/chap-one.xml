@@ -68,7 +68,7 @@
     <thead>
      <row>
       <entry>Index</entry>
-      <entry>Approximate</entry>
+      <entry>Approx.</entry>
       <entry>Equality</entry>
       <entry>Ordering</entry>
       <entry>Presence</entry>
@@ -183,7 +183,7 @@
       <entry>4000</entry>
      </row>
      <row>
-      <entry><literal>telephoneNumber</literal></entry>
+      <entry><literal>telephone&#xAD;Number</literal></entry>
       <entry>-</entry>
       <entry>Yes</entry>
       <entry>-</entry>
@@ -201,7 +201,7 @@
       <entry>4000</entry>
      </row>
      <row>
-      <entry><literal>uniqueMember</literal></entry>
+      <entry><literal>unique&#xAD;Member</literal></entry>
       <entry>-</entry>
       <entry>Yes</entry>
       <entry>-</entry>
