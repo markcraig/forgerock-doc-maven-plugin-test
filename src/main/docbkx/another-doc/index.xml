@@ -322,70 +322,16 @@
   <section>
    <title>Soft Hyphens in &lt;term&gt; &gt; &lt;literal&gt;</title>
 
-   <para>This is a section in the doc.</para>
-
-   <variablelist>
-    <para>Testing issues with soft hyphens in literals.</para>
-
-    <varlistentry>
-     <term><literal>dayofweek = "<replaceable>day</replaceable>[, <replaceable
-             >day</replaceable> &#8230;]"</literal></term>
-     <term><literal>dayofweek != "<replaceable>day</replaceable>[, <replaceable
-             >day</replaceable> &#8230;]"</literal></term>
-     <listitem>
-      <para>Replace <replaceable>day</replaceable> with one of
-      <literal>sun</literal>, <literal>mon</literal>, <literal>tue</literal>,
-      <literal>wed</literal>, <literal>thu</literal>, <literal>fri</literal>,
-      <literal>sat</literal>.</para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term><literal>userattr = "<replaceable>attr</replaceable>#<replaceable
-             >value</replaceable>"</literal></term>
-     <term><literal>userattr != "<replaceable>attr</replaceable>#<replaceable
-             >value</replaceable>"</literal></term>
-     <term><literal>userattr = <replaceable
-             >ldap-url</replaceable>#LDAPURL"</literal></term>
-     <term><literal>userattr != <replaceable
-             >ldap-url</replaceable>#LDAPURL"</literal></term>
-     <term>Whole &lt;term&gt;s on single lines:</term>
-     <term><literal>userattr = "[parent[<replaceable>child-level</replaceable>].]<replaceable>attr</replaceable>#GROUPDN|USERDN"</literal></term>
-     <term><literal>userattr != "[parent[<replaceable>child-level</replaceable>].]<replaceable>attr</replaceable>#GROUPDN|USERDN"</literal></term>
-     <term>&lt;term&gt;s split over multiple lines to fit source code in 80-column page:</term>
-     <term><literal>userattr = "[parent[<replaceable
-             >child-level</replaceable>].]<replaceable>attr</replaceable
-             >#GROUPDN|USERDN"</literal></term>
-     <term><literal>userattr != "[parent[<replaceable
-             >child-level</replaceable>].]<replaceable>attr</replaceable
-             >#GROUPDN|USERDN"</literal></term>
-     <term>&lt;term&gt;s split over multiple lines, no &lt;replaceable&gt; children:</term>
-     <term><literal>userattr = "[parent[child-level].]attr#GROUPDN|USERDN"</literal></term>
-     <term><literal>userattr != "[parent[child-level].]attr#GROUPDN|USERDN"</literal></term>
-     <listitem>
-      <para>The <literal>userattr</literal> subject specifies an attribute
-      that must match on both the bind entry and the target of the ACI.</para>
-      <para>To match when the attribute on the bind DN entry corresponds
-      directly to the attribute on the target entry, replace
-      <replaceable>attr</replaceable> with the attribute type, and
-      <replaceable>value</replaceable> with the attribute value.</para>
-      <para>To match when the target entry is identified by an LDAP URL, and
-      the bind DN is in the subtree of the DN of the LDAP URL, use
-      <replaceable>ldap-url</replaceable>#LDAPURL.</para>
-      <para>To match when the bind DN corresponds to a member of the group
-      identified by the <replaceable>attr</replaceable> value on the target
-      entry, use <replaceable>attr</replaceable>#GROUPDN.</para>
-      <para>To match when the bind DN corresponds to the
-      <replaceable>attr</replaceable> value on the target entry, use
-      <replaceable>attr</replaceable>#USERDN.</para>
-      <para>The optional inheritence specification,
-      <literal>parent[<replaceable>child-level</replaceable>].</literal>, lets
-      you specify how many levels below the target entry inherit the ACI.
-      Here <replaceable>child-level</replaceable> is a number from 0 to 9, with
-      0 indicating the target entry only. Separate multiple
-      <replaceable>child-level</replaceable> digits with commas (,).</para>
-     </listitem>
-    </varlistentry>
-   </variablelist>
+   <itemizedlist>
+    <listitem><para><literal>..</literal></para></listitem>
+    <listitem><para><literal>. .</literal></para></listitem>
+    <listitem><para><literal>.</literal></para></listitem>
+    <listitem><para><literal>.]</literal></para></listitem>
+    <listitem><para><literal>.\</literal></para></listitem>
+    <listitem><para><literal>."</literal></para></listitem>
+    <listitem><para><literal>.a</literal></para></listitem>
+    <listitem><para><literal>.Z</literal></para></listitem>
+   </itemizedlist>
   </section>
 
  <section xml:id="caching">
