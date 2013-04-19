@@ -64,255 +64,6 @@
   <xinclude:include href="../shared/sec-joining-the-community.xml" />
  </preface>
 
- <chapter xml:id="chap-admonitions">
-  <title>Admonition Checks</title>
-
-  <para>This is a chapter full of admonitions.</para>
-
-  <important>
-   <para>This is something important.</para>
-  </important>
-
-  <note>
-   <para>This is a note.</para>
-  </note>
-
-  <tip>
-   <para>Spell check your documentation updates before committing them.</para>
-  </tip>
-
-  <caution>
-   <para>95 º C water can be hot, especially if you pour it on your lap!</para>
-  </caution>
-
-  <warning>
-   <para>If you stick your fork in a live electrical outlet, natural selection
-   might cull you.</para>
-  </warning>
- </chapter>
-
- <chapter xml:id="chap-links">
-  <title>Link Checks</title>
-
-  <para>This chapter has link targets. It links to content in the
-  <citetitle>Bogus Guide</citetitle>, the <link
-  xlink:href="bogus-guide#man-command"
-  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
-  manual page</link>.</para>
-
-  <section>
-   <title>Skip These Links</title>
-
-   <para>This is a section in the doc with some repeated links to skip.</para>
-
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
-
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
-
-  </section>
-
-  <section>
-   <title>Another Section</title>
-
-   <para>This is a section in the doc.</para>
-  </section>
-
-  <section xml:id="another-section">
-   <title>Another Important Section</title>
-   <indexterm><primary>Fake index entry</primary></indexterm>
-
-   <para>This is a section in the doc.</para>
-   <para>If you made it here from the HTML version of the <citetitle>Bogus
-   Guide</citetitle>, then Olinks seem to work.</para>
-  </section>
-
-  <section>
-   <title>Another Section</title>
-
-   <para>This is a section in the doc.</para>
-  </section>
-
-  <section>
-   <title>Another Section</title>
-
-   <para>This is a section in the doc.</para>
-  </section>
-
-  <section>
-   <title>Another Section</title>
-
-   <para>This is a section in the doc.</para>
-  </section>
- </chapter>
-
- <chapter xml:id="jumplink-checks">
-  <title>Jumplink Checks</title>
-
-  <para>This chapter is to check jumplinks. Sections have
-  <literal>xml:id</literal> attributes and some subsections.</para>
-
-  <section xml:id="sectionA">
-   <title>Section A</title>
-
-   <para>This is a section in the doc with procedures.</para>
-
-   <procedure xml:id="procedure-a">
-    <title>Procedure A</title>
-
-    <para>Follow these steps.</para>
-
-    <step>
-     <para>Take a step forward.</para>
-    </step>
-    <step>
-     <para>Take a step back.</para>
-    </step>
-    <step>
-     <para>Repeat until done.</para>
-    </step>
-   </procedure>
-
-   <procedure xml:id="procedure-b">
-    <title>Procedure B</title>
-
-    <para>Follow these steps.</para>
-
-    <step>
-     <para>Take a step forward.</para>
-    </step>
-    <step>
-     <para>Take a step back.</para>
-    </step>
-    <step>
-     <para>Repeat until done.</para>
-    </step>
-   </procedure>
-  </section>
-
-  <section xml:id="sectionB">
-   <title>Section B</title>
-
-   <para>This is a section in the doc.</para>
-
-   <section xml:id="subsectionBa">
-    <title>Subsection Ba</title>
-
-    <para>This is a section inside a section.</para>
-   </section>
-
-   <section xml:id="subsectionBb">
-    <title>Subsection Bb</title>
-
-    <para>This is a section inside a section.</para>
-   </section>
-
-   <section xml:id="subsectionBc">
-    <title>Subsection Bc</title>
-
-    <para>This is a section inside a section.</para>
-   </section>
-  </section>
-
-  <section xml:id="section3">
-   <title>Section 3</title>
-
-   <para>This is a section in the doc with examples.</para>
-
-   <example xml:id="example-a">
-    <title>Example A</title>
-
-    <para>This is an example.</para>
-
-    <screen language="shell"
-    >java -server -Xmx1024m -XX:MaxPermSize=256m -jar start.jar</screen>
-   </example>
-
-   <example xml:id="example-b">
-    <title>Example B</title>
-
-    <para>This is an example.</para>
-
-    <screen language="shell"
-    >java -server -Xmx1024m -XX:MaxPermSize=256m -jar start.jar</screen>
-   </example>
-  </section>
-
-  <section xml:id="section4">
-   <title>Section 4</title>
-
-   <para>This is a section in the doc.</para>
-  </section>
- </chapter>
-
  <chapter xml:id="hyphenation-tests">
   <title>Hyphenation Tests</title>
 
@@ -656,6 +407,255 @@
    </table>
   </section>
  </section>
+ </chapter>
+
+ <chapter xml:id="chap-admonitions">
+  <title>Admonition Checks</title>
+
+  <para>This is a chapter full of admonitions.</para>
+
+  <important>
+   <para>This is something important.</para>
+  </important>
+
+  <note>
+   <para>This is a note.</para>
+  </note>
+
+  <tip>
+   <para>Spell check your documentation updates before committing them.</para>
+  </tip>
+
+  <caution>
+   <para>95 º C water can be hot, especially if you pour it on your lap!</para>
+  </caution>
+
+  <warning>
+   <para>If you stick your fork in a live electrical outlet, natural selection
+   might cull you.</para>
+  </warning>
+ </chapter>
+
+ <chapter xml:id="chap-links">
+  <title>Link Checks</title>
+
+  <para>This chapter has link targets. It links to content in the
+  <citetitle>Bogus Guide</citetitle>, the <link
+  xlink:href="bogus-guide#man-command"
+  xlink:role="http://docbook.org/xlink/role/olink"><command>command</command>
+  manual page</link>.</para>
+
+  <section>
+   <title>Skip These Links</title>
+
+   <para>This is a section in the doc with some repeated links to skip.</para>
+
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+   <para><link xlink:href="http://tools.ietf.org/html/rfc3672">Subentries in the Lightweight Directory Access Protocol (LDAP)</link></para>
+
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+   <para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENAM-2112">ssoadm add-privileges does not work for All Authenticated Users role (fixed)</link></para>
+
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section xml:id="another-section">
+   <title>Another Important Section</title>
+   <indexterm><primary>Fake index entry</primary></indexterm>
+
+   <para>This is a section in the doc.</para>
+   <para>If you made it here from the HTML version of the <citetitle>Bogus
+   Guide</citetitle>, then Olinks seem to work.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+
+  <section>
+   <title>Another Section</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
+ </chapter>
+
+ <chapter xml:id="jumplink-checks">
+  <title>Jumplink Checks</title>
+
+  <para>This chapter is to check jumplinks. Sections have
+  <literal>xml:id</literal> attributes and some subsections.</para>
+
+  <section xml:id="sectionA">
+   <title>Section A</title>
+
+   <para>This is a section in the doc with procedures.</para>
+
+   <procedure xml:id="procedure-a">
+    <title>Procedure A</title>
+
+    <para>Follow these steps.</para>
+
+    <step>
+     <para>Take a step forward.</para>
+    </step>
+    <step>
+     <para>Take a step back.</para>
+    </step>
+    <step>
+     <para>Repeat until done.</para>
+    </step>
+   </procedure>
+
+   <procedure xml:id="procedure-b">
+    <title>Procedure B</title>
+
+    <para>Follow these steps.</para>
+
+    <step>
+     <para>Take a step forward.</para>
+    </step>
+    <step>
+     <para>Take a step back.</para>
+    </step>
+    <step>
+     <para>Repeat until done.</para>
+    </step>
+   </procedure>
+  </section>
+
+  <section xml:id="sectionB">
+   <title>Section B</title>
+
+   <para>This is a section in the doc.</para>
+
+   <section xml:id="subsectionBa">
+    <title>Subsection Ba</title>
+
+    <para>This is a section inside a section.</para>
+   </section>
+
+   <section xml:id="subsectionBb">
+    <title>Subsection Bb</title>
+
+    <para>This is a section inside a section.</para>
+   </section>
+
+   <section xml:id="subsectionBc">
+    <title>Subsection Bc</title>
+
+    <para>This is a section inside a section.</para>
+   </section>
+  </section>
+
+  <section xml:id="section3">
+   <title>Section 3</title>
+
+   <para>This is a section in the doc with examples.</para>
+
+   <example xml:id="example-a">
+    <title>Example A</title>
+
+    <para>This is an example.</para>
+
+    <screen language="shell"
+    >java -server -Xmx1024m -XX:MaxPermSize=256m -jar start.jar</screen>
+   </example>
+
+   <example xml:id="example-b">
+    <title>Example B</title>
+
+    <para>This is an example.</para>
+
+    <screen language="shell"
+    >java -server -Xmx1024m -XX:MaxPermSize=256m -jar start.jar</screen>
+   </example>
+  </section>
+
+  <section xml:id="section4">
+   <title>Section 4</title>
+
+   <para>This is a section in the doc.</para>
+  </section>
  </chapter>
 
  <xinclude:include href='chap-jcite.xml' />
