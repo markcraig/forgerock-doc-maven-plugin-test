@@ -61,7 +61,7 @@
 
  <para>HTML program listing:</para>
 
- <programlisting language="html">&lt;html&gt;
+ <programlisting language="html"><?dbfo keep-together="always" ?>&lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Fedlet Sample Application&lt;/title&gt;
     &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
@@ -181,7 +181,7 @@ http://server1.example.com:8080/openam=http://server2.example.com:8080/openam"</
  <example><?dbfo keep-together="always"?>
   <para>Blank language attribute program listing:</para>
 
-  <programlisting>
+  <programlisting><?dbfo keep-together="always" ?>
 MMMMMMMMMMMMMMMMMMMMMMMMM87IIIIIIIIIII$DMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMM8?IIIIIIIIIIIIIII?IIII8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMNIIIIIIIIIIII?~~~~~~~~~~~~~~~~ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
