@@ -526,9 +526,15 @@
   </section>
 
   <section>
-   <title>Another Section</title>
+   <title>Will This Section Fold?</title>
 
-   <para>This is a section in the doc.</para>
+   <para>This is a section in the doc. Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nunc ut eros dui, gravida consequat ipsum. Vivamus vitae
+    magna in lacus cursus fermentum id eget nisi. Duis tincidunt, magna eget
+    euismod sollicitudin, turpis eros aliquet nisi, in ultricies nulla odio at
+    elit. Suspendisse quis sapien justo. Aenean id laoreet lectus. Donec eu
+    mauris lacus. Mauris pretium gravida nulla sed porttitor. Vivamus non tellus
+    orci, a feugiat dui. Donec lacinia justo tortor. </para>
   </section>
 
   <section xml:id="another-section">
@@ -627,10 +633,40 @@
    </section>
   </section>
 
-  <section xml:id="section3">
+  <section xml:id="section3"><?dbfo-need height="2in"?>
    <title>Section 3</title>
 
    <para>This is a section in the doc with examples.</para>
+
+   <para>Integer vulputate, mauris sed lobortis bibendum, lorem felis
+    sollicitudin dolor, sed euismod massa enim et leo. Fusce mollis, augue at
+    varius accumsan, justo nibh scelerisque metus, at iaculis enim ipsum vitae
+    risus. In condimentum nulla vitae nibh accumsan suscipit. Vestibulum luctus
+    orci convallis arcu dictum a lobortis nulla egestas. Aliquam erat volutpat.
+    Sed volutpat, nunc at adipiscing dignissim, lectus eros porttitor felis, ac
+    commodo tellus libero eu tellus. Morbi suscipit urna vitae arcu ultricies
+    eget dapibus urna porttitor. Praesent varius egestas rhoncus. Nullam dapibus
+    magna ac ligula iaculis pretium vitae nec odio.</para>
+
+    <para>Integer vulputate, mauris sed lobortis bibendum, lorem felis
+    sollicitudin dolor, sed euismod massa enim et leo. Fusce mollis, augue at
+    varius accumsan, justo nibh scelerisque metus, at iaculis enim ipsum vitae
+    risus. In condimentum nulla vitae nibh accumsan suscipit. Vestibulum luctus
+    orci convallis arcu dictum a lobortis nulla egestas. Aliquam erat volutpat.
+    Sed volutpat, nunc at adipiscing dignissim, lectus eros porttitor felis, ac
+    commodo tellus libero eu tellus. Morbi suscipit urna vitae arcu ultricies
+    eget dapibus urna porttitor. Praesent varius egestas rhoncus. Nullam dapibus
+    magna ac ligula iaculis pretium vitae nec odio.</para>
+
+    <para>Integer vulputate, mauris sed lobortis bibendum, lorem felis
+    sollicitudin dolor, sed euismod massa enim et leo. Fusce mollis, augue at
+    varius accumsan, justo nibh scelerisque metus, at iaculis enim ipsum vitae
+    risus. In condimentum nulla vitae nibh accumsan suscipit. Vestibulum luctus
+    orci convallis arcu dictum a lobortis nulla egestas. Aliquam erat volutpat.
+    Sed volutpat, nunc at adipiscing dignissim, lectus eros porttitor felis, ac
+    commodo tellus libero eu tellus. Morbi suscipit urna vitae arcu ultricies
+    eget dapibus urna porttitor. Praesent varius egestas rhoncus. Nullam dapibus
+    magna ac ligula iaculis pretium vitae nec odio.</para>
 
    <example xml:id="example-a">
     <title>Example A</title>
