@@ -63,6 +63,19 @@
  <xinclude:include href='chap-two.xml' />
  <xinclude:include href='chap-three.xml' />
 
+ <glossary>
+  <title>Glossary</title>
+  <glossdiv>
+   <glossentry>
+    <glossterm>test</glossterm>
+    <glossdef>
+     <para>Procedure intended to establish the quality of something before it
+     is used on a large scale</para>
+    </glossdef>
+   </glossentry>
+  </glossdiv>
+ </glossary>
+
  <reference>
   <title>Reference</title>
   <xinclude:include href="../shared/man-command.xml" />
