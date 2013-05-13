@@ -56,7 +56,7 @@
 
  <para>CSV program listing:</para>
 
- <programlisting language="csv"><?dbfo pgwide="1"?>firstName,uid,"lastName","email","employeeNumber",password,"sunrise","sunset","active"
+ <programlisting language="csv" width="92">firstName,uid,"lastName","email","employeeNumber",password,"sunrise","sunset","active"
 "Darth","DDOE","Doe","doe@...","123456","Z29vZA==","2011-11-30T...","2011-12-23T...","TRUE"</programlisting>
 
  <informalexample><?dbfo keep-together="always"?>
