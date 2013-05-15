@@ -172,18 +172,18 @@
     <executions>
 
      <execution>
-      <id>copy-common</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>boilerplate</goal>
-      </goals>
-     </execution>
-
-     <execution>
       <id>run-jcite</id>
       <phase>pre-site</phase>
       <goals>
        <goal>jcite</goal>
+      </goals>
+     </execution>
+
+     <execution>
+      <id>copy-common</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>boilerplate</goal>
       </goals>
      </execution>
 
