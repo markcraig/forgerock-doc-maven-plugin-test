@@ -25,7 +25,7 @@
  <parent>
   <artifactId>forgerock-doc-maven-plugin-test</artifactId>
   <groupId>commons.forgerock.org</groupId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
  </parent>
  <artifactId>forgerock-doc-maven-plugin-test-child</artifactId>
 
@@ -52,12 +52,21 @@
     </configuration>
     <executions>
      <execution>
+      <id>copy-common</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>boilerplate</goal>
+      </goals>
+     </execution>
+
+     <execution>
       <id>build-doc</id>
       <phase>pre-site</phase>
       <goals>
        <goal>build</goal>
       </goals>
      </execution>
+
      <execution>
       <id>layout-doc</id>
       <phase>site</phase>
