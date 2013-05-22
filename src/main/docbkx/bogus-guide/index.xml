@@ -83,11 +83,12 @@
  </reference>
 
  <appendix xml:id="appendix-short">
-  <title>Very Short Appendix</title>
+  <title>Short Appendix</title>
 
-  <para>This is a very, very short appendix.</para>
+  <para>This is a short appendix.</para>
 
-  <para>Enough said.</para>
+  <xinclude:include href="../shared/sec-release-levels.xml" />
+  <xinclude:include href="../shared/sec-interface-stability.xml" />
  </appendix>
  <index />
 </book>
