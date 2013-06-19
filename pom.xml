@@ -67,6 +67,9 @@
   <softwareReleaseDate>${releaseDate}</softwareReleaseDate>
   <docbkxSourceDirectory>${basedir}/src/main/docbkx</docbkxSourceDirectory>
   <docbkxGeneratedSourceDirectory>${project.build.directory}/generated-docbkx</docbkxGeneratedSourceDirectory>
+
+  <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
+  <forgerockSite>http://forgerock.com</forgerockSite>
  </properties>
 
  <inceptionYear>2012</inceptionYear>
@@ -91,6 +94,33 @@
  </repositories>
 
  <build>
+  <!--
+
+   Workaround for https://code.google.com/p/docbkx-tools/issues/detail?id=49
+
+   This calls for some changes in how the docs are built:
+   * Add resources:resources as the first goal if you run only the site lifecycle.
+   * Set <docbkxSourceDirectory>target/classes/docbkx</docbkxSourceDirectory> in the forgerock-doc-maven-plugin config.
+   * Specify each file type you want to filter, and exclude it from those copied but not filtered.
+
+  -->
+  <resources>
+   <resource>
+    <directory>src/main</directory>
+    <filtering>true</filtering>
+    <includes>
+     <include>**/*.xml</include>
+    </includes>
+   </resource>
+   <resource>
+    <directory>src/main</directory>
+    <filtering>false</filtering>
+    <excludes>
+     <exclude>**/*.xml</exclude>
+    </excludes>
+   </resource>
+  </resources>
+
   <plugins>
 <!-- Call Mavenized JCite directly. The dependency is not published, yet.
      See https://code.google.com/r/markcraig-jcite/
@@ -157,6 +187,7 @@
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
     <configuration>
+     <docbkxSourceDirectory>target/classes/docbkx</docbkxSourceDirectory>
      <projectName>ForgeRock</projectName>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
 <!--
