@@ -65,7 +65,7 @@
   At all other times, the release date should be empty. -->
   <releaseDate />
   <softwareReleaseDate>${releaseDate}</softwareReleaseDate>
-  <docbkxSourceDirectory>${basedir}/src/main/docbkx</docbkxSourceDirectory>
+  <docbkxSourceDirectory>target/docbkx-filtered</docbkxSourceDirectory>
   <docbkxGeneratedSourceDirectory>${project.build.directory}/generated-docbkx</docbkxGeneratedSourceDirectory>
 
   <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
@@ -94,6 +94,8 @@
  </repositories>
 
  <build>
+  <plugins>
+
   <!--
 
    Workaround for https://code.google.com/p/docbkx-tools/issues/detail?id=49
@@ -104,24 +106,39 @@
    * Specify each file type you want to filter, and exclude it from those copied but not filtered.
 
   -->
-  <resources>
-   <resource>
-    <directory>src/main</directory>
-    <filtering>true</filtering>
-    <includes>
-     <include>**/*.xml</include>
-    </includes>
-   </resource>
-   <resource>
-    <directory>src/main</directory>
-    <filtering>false</filtering>
-    <excludes>
-     <exclude>**/*.xml</exclude>
-    </excludes>
-   </resource>
-  </resources>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <executions>
+     <execution>
+      <id>filter-docbkx-resources</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>copy-resources</goal>
+      </goals>
+      <configuration>
+       <outputDirectory>${docbkxSourceDirectory}</outputDirectory>
+       <resources>
+        <resource>
+         <directory>src/main/docbkx</directory>
+         <filtering>true</filtering>
+         <includes>
+          <include>**/*.xml</include>
+         </includes>
+        </resource>
+        <resource>
+         <directory>src/main/docbkx</directory>
+         <filtering>false</filtering>
+         <excludes>
+          <exclude>**/*.xml</exclude>
+         </excludes>
+        </resource>
+       </resources>
+      </configuration>
+     </execution>
+    </executions>
+   </plugin>
 
-  <plugins>
 <!-- Call Mavenized JCite directly. The dependency is not published, yet.
      See https://code.google.com/r/markcraig-jcite/
    <plugin>
@@ -187,7 +204,7 @@
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
     <configuration>
-     <docbkxSourceDirectory>target/classes/docbkx</docbkxSourceDirectory>
+     <docbkxSourceDirectory>${docbkxSourceDirectory}</docbkxSourceDirectory>
      <projectName>ForgeRock</projectName>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
 <!--
