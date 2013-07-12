@@ -59,6 +59,11 @@
  <programlisting language="csv" width="92">firstName,uid,"lastName","email","employeeNumber",password,"sunrise","sunset","active"
 "Darth","DDOE","Doe","doe@...","123456","Z29vZA==","2011-11-30T...","2011-12-23T...","TRUE"</programlisting>
 
+ <para>Wide program listing:</para>
+
+ <programlisting language="none" width="99"
+ >This line is supposed to be 99 characters wide!! This line is supposed to be 99 characters wide!!!</programlisting>
+
  <informalexample><?dbfo keep-together="always"?>
   <para>HTML program listing:</para>
 
