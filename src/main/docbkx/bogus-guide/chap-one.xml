@@ -246,20 +246,27 @@
  <section xml:id="docs-78">
   <title>Hyphenation in URLs</title>
 
-  <para>Use some long URLs that should call for hyphenation. The values of
+  <para>Use some long URLs that should call for hyphenation. Some values of
   the URLs are incorrect, which you notice if you copy/paste: hyphens have
   been replaced with other characters.</para>
 
   <simplelist>
+
+   <!-- If content is specified, the stylesheets don't treat it as a link. -->
    <member><link
-   xlink:href="http://docs.forgerock.org/en/openam/10.1.0/reference/index/chap-config-ref.html#servers-and-sites-configuration"
-   >http://docs.forgerock.org/en/openam/10.1.0/reference/index/chap/config/ref.html?servers=and&amp;sites=configuration#1</link></member>
-   <member><link
-   xlink:href="http://docs.forgerock.org/en/opendj/2.6.0/dev-guide/index/chap-best-practices.html#authenticate-correctly"
-   >http://docs.forgerock.org/en/opendj/2.6.0/dev-guide/index/chap/best/practices.html#authenticateCorrectly</link></member>
-   <member><link
-   xlink:href="http://docs.forgerock.org/en/openidm/2.1.0/integrators-guide/index/chap-overview.html#openidm-infrastructure-modules"
-   >http://docs.forgerock.org/en/openidm/2.1.0/integrators-guide/index/chap/overview.html?openidm=infrastructure#modules</link></member>
+   xlink:href="http://docs.forgerock.org/hyphens/in/custom/link/content/will/not/be/supported/for/docs-78"
+   >http://docs.forgerock.org/hyphens/in/custom/link/content/will/not/be/supported/for/docs-78</link></member>
+
+   <!-- If no content is specified, the break works fine. -->
+   <member><link xlink:href="http://docs.forgerock.org/en/openidm/2.1.0/integrators/guide/index/chap/overview/infrastructure/modules/"/></member>
+
+   <!-- Also should work in literal elements. -->
+   <member><literal
+   >http://docs.forgerock.org/en/openidm/2.1.0/integrators-guide/index/chap/overview.html?openidm=infrastructure#modules</literal></member>
+
+   <member><literal
+   >http://docs.forgerock.org/en/openidm/2.1.0/integrators-guide/<replaceable>chap/subchapter</replaceable>/overview.html?openidm=infrastructure#modules</literal></member>
+
   </simplelist>
  </section>
 
