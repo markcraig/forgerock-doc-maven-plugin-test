@@ -288,6 +288,32 @@ uid=bjensen,ou=People,dc=example,dc=com with the password hifalutin.</programlis
   <literal>hifalutin</literal>.</para>
  </section>
 
+ <section xml:id="docs-88">
+  <title>Simplelist Width in HTML</title>
+
+  <para>When simplelist is rendered as a table in HTML, the columns appear only
+  as wide as their widest element. (In other words, by default columns are
+  scrunched together.)</para>
+
+  <simplelist type="vert" columns="2">
+   <member>/identity/attributes</member>
+   <member>/identity/authenticate</member>
+   <member>/identity/authorize</member>
+   <member>/identity/create</member>
+   <member>/identity/delete</member>
+   <member>/identity/isTokenValid</member>
+   <member>/identity/log</member>
+   <member>/identity/logout</member>
+   <member>/identity/read</member>
+   <member>/identity/search</member>
+   <member>/identity/update</member>
+   <member>/ws/1/entitlement/decision</member>
+   <member>/ws/1/entitlement/decisions</member>
+   <member>/ws/1/entitlement/entitlement</member>
+  </simplelist>
+
+ </section>
+
  <section xml:id="docs-32">
   <title>A Long OrderedList</title>
 
