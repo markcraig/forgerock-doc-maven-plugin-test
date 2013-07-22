@@ -270,6 +270,24 @@
   </simplelist>
  </section>
 
+ <section xml:id="docs-87">
+  <title>Allow soft hyphens at commas in long literals</title>
+
+  <para>Passages with DNs sometimes get ugly without hyphenation.</para>
+
+  <para>There can be lots of space to consume. Without the fix:</para>
+
+  <programlisting language="none"
+  >To bind using Barbara Jensen's identity  and  simple authentication,
+for   example,    your    application    would    provide   the   DN
+uid=bjensen,ou=People,dc=example,dc=com with the password hifalutin.</programlisting>
+
+  <para>To bind using Barbara Jensen's identity and simple authentication, for
+  example, your application would provide the DN
+  <literal>uid=bjensen,ou=People,dc=example,dc=com</literal> with the password
+  <literal>hifalutin</literal>.</para>
+ </section>
+
  <section xml:id="docs-32">
   <title>A Long OrderedList</title>
 
