@@ -139,48 +139,6 @@
     </executions>
    </plugin>
 
-<!-- Call Mavenized JCite directly. The dependency is not published, yet.
-     See https://code.google.com/r/markcraig-jcite/
-   <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-antrun-plugin</artifactId>
-    <version>1.7</version>
-    <configuration>
-     <target>
-      <mkdir dir="${docbkxGeneratedSourceDirectory}" />
-      <taskdef
-       name="jcite"
-       classname="ch.arrenbrecht.jcite.JCiteTask"
-       classpathref="maven.plugin.classpath" />
-      <jcite
-       srcdir="${docbkxSourceDirectory}"
-       destdir="${docbkxGeneratedSourceDirectory}">
-       <sourcepath>
-        <pathelement location="src/main/java" />
-       </sourcepath>
-       <include name="**/*.xml" />
-      </jcite>
-     </target>
-    </configuration>
-    <executions>
-     <execution>
-      <id>run-jcite</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>run</goal>
-      </goals>
-     </execution>
-    </executions>
-    <dependencies>
-     <dependency>
-      <groupId>org.mcraig</groupId>
-      <artifactId>jcite</artifactId>
-      <version>${jciteVersion}</version>
-     </dependency>
-    </dependencies>
-   </plugin>
- -->
-
    <!-- Try JCite in Javadoc, see http://www.arrenbrecht.ch/jcite/javadoc.htm -->
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
