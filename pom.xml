@@ -65,7 +65,8 @@
   At all other times, the release date should be empty. -->
   <releaseDate />
   <softwareReleaseDate>${releaseDate}</softwareReleaseDate>
-  <docbkxSourceDirectory>${project.build.directory}/docbkx-filtered</docbkxSourceDirectory>
+  <buildDirectory>${basedir}/build</buildDirectory>
+  <docbkxSourceDirectory>${buildDirectory}/docbkx-filtered</docbkxSourceDirectory>
   <docbkxGeneratedSourceDirectory>generated-docbkx</docbkxGeneratedSourceDirectory>
 
   <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
@@ -94,6 +95,7 @@
  </repositories>
 
  <build>
+  <directory>${buildDirectory}</directory>
   <plugins>
 
   <!--
