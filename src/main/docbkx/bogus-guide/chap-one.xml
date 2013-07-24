@@ -246,6 +246,8 @@
  <section xml:id="docs-78">
   <title>Hyphenation in URLs</title>
 
+  <note><para>Really only pertains to PDF and RTF.</para></note>
+
   <para>Use some long URLs that should call for hyphenation. Some values of
   the URLs are incorrect, which you notice if you copy/paste: hyphens have
   been replaced with other characters.</para>
@@ -272,6 +274,8 @@
 
  <section xml:id="docs-87">
   <title>Allow soft hyphens at commas in long literals</title>
+
+  <note><para>Really only pertains to PDF and RTF.</para></note>
 
   <para>Passages with DNs sometimes get ugly without hyphenation.</para>
 
