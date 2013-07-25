@@ -60,10 +60,12 @@
   <jciteVersion>1.13.0</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <gaId>UA-xxxxxxxx-x</gaId>
-  <!-- Release date and publication date are set at release build time.
-  -D"releaseDate=Software release date: January 1, 1970"
-  -D"pubDate=Publication date: December 31, 1969"
-  At all other times, the dates should be empty. -->
+  <!--
+    Release date and publication date are set at release build time.
+      -D"releaseDate=Software release date: January 1, 1970"
+      -D"pubDate=Publication date: December 31, 1969"
+    At all other times, the dates should be empty.
+  -->
   <releaseDate />
   <softwareReleaseDate>${releaseDate}</softwareReleaseDate>
   <pubDate />
