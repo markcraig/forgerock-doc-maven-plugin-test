@@ -55,6 +55,14 @@
     </configuration>
     <executions>
      <execution>
+      <id>filter-sources</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>filter</goal>
+      </goals>
+     </execution>
+
+     <execution>
       <id>copy-common</id>
       <phase>pre-site</phase>
       <goals>

@@ -72,8 +72,6 @@
   <publicationDate>${pubDate}</publicationDate>
 
   <buildDirectory>${basedir}/build</buildDirectory>
-  <docbkxSourceDirectory>${buildDirectory}/docbkx-filtered</docbkxSourceDirectory>
-  <docbkxGeneratedSourceDirectory>generated-docbkx</docbkxGeneratedSourceDirectory>
 
   <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
   <forgerockSite>http://forgerock.com</forgerockSite>
@@ -104,49 +102,6 @@
   <directory>${buildDirectory}</directory>
   <plugins>
 
-  <!--
-
-   Workaround for https://code.google.com/p/docbkx-tools/issues/detail?id=49
-
-   This calls for some changes in how the docs are built:
-   * Add resources:resources as the first goal if you run only the site lifecycle.
-   * Set <docbkxSourceDirectory>target/classes/docbkx</docbkxSourceDirectory> in the forgerock-doc-maven-plugin config.
-   * Specify each file type you want to filter, and exclude it from those copied but not filtered.
-
-  -->
-   <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-resources-plugin</artifactId>
-    <executions>
-     <execution>
-      <id>filter-docbkx-resources</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>copy-resources</goal>
-      </goals>
-      <configuration>
-       <outputDirectory>${docbkxSourceDirectory}</outputDirectory>
-       <resources>
-        <resource>
-         <directory>src/main/docbkx</directory>
-         <filtering>true</filtering>
-         <includes>
-          <include>**/*.xml</include>
-         </includes>
-        </resource>
-        <resource>
-         <directory>src/main/docbkx</directory>
-         <filtering>false</filtering>
-         <excludes>
-          <exclude>**/*.xml</exclude>
-         </excludes>
-        </resource>
-       </resources>
-      </configuration>
-     </execution>
-    </executions>
-   </plugin>
-
    <!-- Try JCite in Javadoc, see http://www.arrenbrecht.ch/jcite/javadoc.htm -->
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -170,7 +125,6 @@
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
     <configuration>
-     <docbkxSourceDirectory>${docbkxSourceDirectory}</docbkxSourceDirectory>
      <projectName>ForgeRock</projectName>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
 <!--
@@ -184,6 +138,14 @@
 -->
     </configuration>
     <executions>
+
+     <execution>
+      <id>filter-sources</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>filter</goal>
+      </goals>
+     </execution>
 
      <execution>
       <id>run-jcite</id>

@@ -36,17 +36,45 @@
  <emphasis>italics</emphasis>, <literal>monospace</literal>, and
  <emphasis role="strong">bold</emphasis> characters.</para>
 
- <important>
+ <section xml:id="section-zero">
   <title>Fun With Maven Filtering</title>
 
   <para>This is to try Maven properties in XML attributes:</para>
-  <simplelist>
-   <member>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&#36;{publishedDocBase}&lt;/link&gt;: <link xlink:href="${publishedDocBase}">${publishedDocBase}</link></member>
-   <member>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&lt;?eval &#36;{publishedDocBase}?&gt;: <link xlink:href="${publishedDocBase}"><?eval ${publishedDocBase}?></link></member>
-   <member>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&#36;{forgerockSite}&lt;/link&gt;: <link xlink:href="${forgerockSite}">${forgerockSite}</link></member>
-   <member>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&lt;?eval &#36;{forgerockSite}?&gt;&lt;/link&gt;: <link xlink:href="${forgerockSite}"><?eval ${forgerockSite}?></link></member>
-  </simplelist>
- </important>
+
+  <variablelist>
+   <varlistentry>
+    <term><literal>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&#36;{publishedDocBase}&lt;/link&gt;</literal></term>
+    <listitem>
+     <para>After Maven filtering:
+     <literal><link xlink:href="${publishedDocBase}">${publishedDocBase}</link></literal></para>
+    </listitem>
+   </varlistentry>
+
+   <varlistentry>
+    <term><literal>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&lt;?eval &#36;{publishedDocBase}?&gt;</literal></term>
+    <listitem>
+     <para>After Maven filtering:
+     <literal><link xlink:href="${publishedDocBase}"><?eval ${publishedDocBase}?></link></literal></para>
+    </listitem>
+   </varlistentry>
+
+   <varlistentry>
+    <term><literal>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&#36;{forgerockSite}&lt;/link&gt;</literal></term>
+    <listitem>
+     <para>After Maven filtering:
+     <literal><link xlink:href="${forgerockSite}">${forgerockSite}</link></literal></para>
+    </listitem>
+   </varlistentry>
+
+   <varlistentry>
+    <term><literal>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&lt;?eval &#36;{forgerockSite}?&gt;&lt;/link&gt;</literal></term>
+    <listitem>
+     <para>After Maven filtering:
+     <literal><link xlink:href="${forgerockSite}"><?eval ${forgerockSite}?></link></literal></para>
+    </listitem>
+   </varlistentry>
+  </variablelist>
+ </section>
  
  <section xml:id="section-one">
   <title>A Section Mentioned in the Index</title>
