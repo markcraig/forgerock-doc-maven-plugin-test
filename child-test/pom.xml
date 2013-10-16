@@ -71,6 +71,14 @@
      </execution>
 
      <execution>
+      <id>prepare-sources</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>prepare</goal>
+      </goals>
+     </execution>
+
+     <execution>
       <id>build-doc</id>
       <phase>pre-site</phase>
       <goals>

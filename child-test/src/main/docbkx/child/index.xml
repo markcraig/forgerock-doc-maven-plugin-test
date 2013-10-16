@@ -77,6 +77,18 @@
    </caption>
   </mediaobject>
 
+  <para>Also, see the ForgeRock logo.</para>
+
+  <mediaobject xml:id="figure-fr-logo">
+   <alt>ForgeRock logo</alt>
+   <imageobject>
+    <imagedata fileref="images/fr-logo.png" format="PNG" />
+   </imageobject>
+   <textobject>
+    <para>This image is 156 x 104 pixels, at 72 dpi by default.</para>
+   </textobject>
+  </mediaobject>
+
   <itemizedlist>
    <para>This chapter also includes several links:</para>
    <listitem>
