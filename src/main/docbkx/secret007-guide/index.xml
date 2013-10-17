@@ -56,6 +56,24 @@
  <chapter xml:id="tiny-chapter">
   <title>Really Short Chapter</title>
 
-  <para>Nothing to see here, please move on.</para>
+  <para>
+   Here is a generated sequence diagram.
+  </para>
+
+  <mediaobject xml:id="figure-openid-connect-basic">
+   <alt>Generated sequence diagram</alt>
+   <imageobject>
+    <imagedata fileref="images/openid-connect-basic.png" format="PNG" />
+   </imageobject>
+   <textobject>
+    <para>
+     The sequence diagram is described in images/openid-connect-basic.txt.
+    </para>
+   </textobject>
+  </mediaobject>
+
+  <para>
+   Nothing else to see here, please move on.
+  </para>
  </chapter>
 </book>
