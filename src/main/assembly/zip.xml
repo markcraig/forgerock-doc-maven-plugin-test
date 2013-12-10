@@ -25,13 +25,26 @@
   <formats>
    <format>zip</format>
   </formats>
-  <fileSets>
-   <fileSet>
-    <directory>${project.build.directory}/release</directory>
-    <outputDirectory>${projectName}</outputDirectory>
-    <excludes>
-     <exclude>**/${releaseVersion}/index.html</exclude>
-    </excludes>
-   </fileSet>
-  </fileSets>
-</assembly>
+<!-- Looks like this might need to be in the child, rather than the parent.
+   <moduleSets>
+    <moduleSet>
+     <useAllReactorProjects>true</useAllReactorProjects>
+     <includes>
+      <include>*:*</include>
+     </includes>
+     <binaries>
+      <unpack>true</unpack>
+     </binaries>
+    </moduleSet>
+   </moduleSets>
+-->
+   <fileSets>
+    <fileSet>
+     <directory>${project.build.directory}/release</directory>
+     <outputDirectory>${projectName}</outputDirectory>
+     <excludes>
+      <exclude>**/${releaseVersion}/index.html</exclude>
+     </excludes>
+    </fileSet>
+   </fileSets>
+ </assembly>
