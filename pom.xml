@@ -56,6 +56,7 @@
  </licenses>
 
  <properties>
+  <projectName>ForgeRock</projectName>
   <frDocPluginVersion>2.0.0-SNAPSHOT</frDocPluginVersion>
   <jciteVersion>1.13.0</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -160,7 +161,7 @@
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
     <configuration>
-     <projectName>ForgeRock</projectName>
+     <projectName>${projectName}</projectName>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
 <!--
      <excludes>
@@ -244,6 +245,26 @@
     </dependencies>
    </plugin>
 -->
+
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-assembly-plugin</artifactId>
+    <configuration>
+     <finalName>${projectName}-${releaseVersion}</finalName>
+     <descriptors>
+      <descriptor>src/main/assembly/zip.xml</descriptor>
+     </descriptors>
+    </configuration>
+    <executions>
+     <execution>
+      <id>make-assembly</id>
+      <phase>post-site</phase>
+      <goals>
+       <goal>single</goal>
+      </goals>
+     </execution>
+    </executions>
+   </plugin>
  </plugins>
  </build>
  <modules>
