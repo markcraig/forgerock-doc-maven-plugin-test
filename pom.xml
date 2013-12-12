@@ -246,6 +246,7 @@
    </plugin>
 -->
 
+<!-- Uncomment to generate .zip without depending on the doc build plugin.
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-assembly-plugin</artifactId>
@@ -265,6 +266,7 @@
      </execution>
     </executions>
    </plugin>
+-->
  </plugins>
  </build>
  <modules>
