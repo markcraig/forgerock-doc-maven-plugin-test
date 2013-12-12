@@ -218,9 +218,17 @@
      <execution>
       <id>layout-doc</id>
       <phase>site</phase>
+<!--
+      <configuration>
+       <buildReleaseZip>true</buildReleaseZip>
+       <releaseVersion>1.0.0</releaseVersion>
+      </configuration>
+-->
       <goals>
        <goal>layout</goal>
-<!--       <goal>release</goal> -->
+<!--
+       <goal>release</goal>
+-->
       </goals>
      </execution>
     </executions>
