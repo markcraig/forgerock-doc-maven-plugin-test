@@ -172,13 +172,22 @@
       <exclude>rtf</exclude>
      </excludes>
 -->
+
+<!-- Alternative branding configuration
+
+     <brandingGroupId>org.forgerock.commons</brandingGroupId>
+     <brandingArtifactId>forgerock-doc-default-branding</brandingArtifactId>
+     <brandingVersion>1.0.1</brandingVersion>
+-->
     </configuration>
     <executions>
 
      <execution>
       <id>copy-common</id>
       <phase>pre-site</phase>
+
 <!-- Alternative common content configuration
+
       <configuration>
        <commonContentGroupId>org.forgerock.commons</commonContentGroupId>
        <commonContentArtifactId>forgerock-doc-common-content</commonContentArtifactId>
