@@ -178,6 +178,13 @@
      <execution>
       <id>copy-common</id>
       <phase>pre-site</phase>
+<!-- Alternative common content configuration
+      <configuration>
+       <commonContentGroupId>org.forgerock.commons</commonContentGroupId>
+       <commonContentArtifactId>forgerock-doc-common-content</commonContentArtifactId>
+       <commonContentVersion>1.0.0</commonContentVersion>
+      </configuration>
+-->
       <goals>
        <goal>boilerplate</goal>
       </goals>
