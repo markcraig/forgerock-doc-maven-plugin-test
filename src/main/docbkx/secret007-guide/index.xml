@@ -20,14 +20,14 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2013 ForgeRock AS
+  !      Copyright 2013-2014 ForgeRock AS
   !    
 -->
 <book xml:id='secret007-guide'
  xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
- xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
- xmlns:xlink='http://www.w3.org/1999/xlink'
+ xsi:schemaLocation='http://docbook.org/ns/docbook
+                     http://docbook.org/xml/5.0/xsd/docbook.xsd'
  xmlns:xinclude='http://www.w3.org/2001/XInclude'>
  <info>
   <title>Secret 007 Guide</title>
@@ -35,7 +35,7 @@
    <para>Another doc for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
   </abstract>
   <copyright>
-   <year>2013</year>
+   <year>2013-2014</year>
    <holder>ForgeRock AS</holder>
   </copyright>
   <authorgroup>
@@ -73,7 +73,19 @@
   </mediaobject>
 
   <para>
-   Nothing else to see here, please move on.
+   Here is a generated sequence diagram that is long and narrow.
   </para>
+
+  <mediaobject xml:id="figure-long-image">
+   <alt>A Long Narrow Sequence Diagram</alt>
+   <imageobject>
+    <imagedata fileref="images/long-image.png" format="PNG" />
+   </imageobject>
+   <textobject>
+    <para>
+     The sequence diagram is described in images/long-image.txt.
+    </para>
+   </textobject>
+  </mediaobject>
  </chapter>
 </book>
