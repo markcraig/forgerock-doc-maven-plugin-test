@@ -79,7 +79,7 @@
   <mediaobject xml:id="figure-long-image">
    <alt>A Long Narrow Sequence Diagram</alt>
    <imageobject>
-    <imagedata fileref="images/long-image.png" format="PNG" />
+    <imagedata fileref="images/long-image.png" format="PNG" depth="5in" contentwidth="100%" />
    </imageobject>
    <textobject>
     <para>
@@ -87,5 +87,23 @@
     </para>
    </textobject>
   </mediaobject>
+<!--
+
+  <para>
+   Here is another tall image, one that is not generated, but comes from DOCS-124.
+  </para>
+
+  <mediaobject xml:id="figure-tall-image">
+   <alt>A Tall Narrow Flow Diagram</alt>
+   <imageobject>
+    <imagedata fileref="images/tall-image.png" format="PNG" />
+   </imageobject>
+   <textobject>
+    <para>
+     This image is not generated.
+    </para>
+   </textobject>
+  </mediaobject>
+-->
  </chapter>
 </book>
