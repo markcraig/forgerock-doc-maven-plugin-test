@@ -302,22 +302,23 @@
  </plugins>
  </build>
 
-  <reporting>
-   <plugins>
-    <plugin>
-     <groupId>org.apache.maven.plugins</groupId>
-     <artifactId>maven-project-info-reports-plugin</artifactId>
-     <version>2.4</version>
-     <reportSets>
-      <reportSet>
-       <reports>
-        <report>dependencies</report>
-       </reports>
-      </reportSet>
-     </reportSets>
-    </plugin>
-   </plugins>
-  </reporting>
+ <!-- This is a hack to avoid generating a site/index.html file. -->
+ <reporting>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-project-info-reports-plugin</artifactId>
+    <version>2.4</version>
+    <reportSets>
+     <reportSet>
+      <reports>
+       <report>dependencies</report>
+      </reports>
+     </reportSet>
+    </reportSets>
+   </plugin>
+  </plugins>
+ </reporting>
 
  <modules>
   <module>child-test</module>
