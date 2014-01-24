@@ -173,6 +173,14 @@
      </excludes>
 -->
 
+     <!-- DOCS-81: evaluating docbkx-tools 2.0.15, epub and rtf break the build for now.
+     <excludes>
+      <exclude>epub</exclude>
+      <exclude>rtf</exclude>
+     </excludes>
+     -->
+
+
 <!-- Alternative branding configuration
 
      <brandingGroupId>org.forgerock.commons</brandingGroupId>
