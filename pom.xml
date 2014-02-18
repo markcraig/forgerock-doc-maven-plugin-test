@@ -299,10 +299,25 @@
     </executions>
    </plugin>
 -->
+
+   <!-- Remove spuriously generated target directory. -->
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-clean-plugin</artifactId>
+    <version>2.5</version>
+    <configuration>
+     <filesets>
+      <fileset>
+       <directory>${basedir}/target</directory>
+      </fileset>
+     </filesets>
+    </configuration>
+   </plugin>
+
  </plugins>
  </build>
 
- <!-- This is a hack to avoid generating a site/index.html file. -->
+ <!-- This is a hack to avoid generating a site/index.html file.
  <reporting>
   <plugins>
    <plugin>
@@ -319,6 +334,7 @@
    </plugin>
   </plugins>
  </reporting>
+ -->
 
  <modules>
   <module>child-test</module>
