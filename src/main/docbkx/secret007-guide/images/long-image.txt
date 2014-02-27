@@ -33,6 +33,8 @@ autonumber
 participant "Client" as Client
 participant "Server" as Server
 
+Client<->Server: Multi-message exchange
+
 Client->Server: Request
 
 Server->Client: Response
