@@ -125,8 +125,8 @@
         DOCS-35: Integrate support for text-based sequence diagram sources
    <plugin>
     <groupId>com.github.jeluard</groupId>
-    <artifactId>maven-plantuml-plugin</artifactId>
-    <version>7940</version>
+    <artifactId>plantuml-maven-plugin</artifactId>
+    <version>1.0</version>
     <executions>
      <execution>
       <id>run-plantuml</id>
@@ -150,7 +150,7 @@
      <dependency>
       <groupId>net.sourceforge.plantuml</groupId>
       <artifactId>plantuml</artifactId>
-      <version>7940</version>
+      <version>7993</version>
      </dependency>
     </dependencies>
    </plugin>
