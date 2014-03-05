@@ -57,6 +57,7 @@
 
  <properties>
   <projectName>ForgeRock</projectName>
+  <projectVersion>1.0.0</projectVersion>
   <frDocPluginVersion>2.1.0-SNAPSHOT</frDocPluginVersion>
   <jciteVersion>1.13.0</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -162,6 +163,7 @@
     <version>${frDocPluginVersion}</version>
     <configuration>
      <projectName>${projectName}</projectName>
+     <projectVersion>${projectVersion}</projectVersion>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
 <!--
      <excludes>
