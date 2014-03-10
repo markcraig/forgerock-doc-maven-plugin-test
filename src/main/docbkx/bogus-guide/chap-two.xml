@@ -20,15 +20,15 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2012-2013 ForgeRock AS
+  !      Copyright 2012-2014 ForgeRock AS
   !    
 -->
 <chapter xml:id='chap-two'
  xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
- xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
- xmlns:xlink='http://www.w3.org/1999/xlink'
- xmlns:xinclude='http://www.w3.org/2001/XInclude'>
+ xsi:schemaLocation='http://docbook.org/ns/docbook
+                     http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink='http://www.w3.org/1999/xlink'>
  <title>Chapter Two</title>
 
  <para>This is chapter two of the <citetitle>ForgeRock Bogus Test
@@ -43,6 +43,41 @@
  <screen>$ echo Terminal sessions are formatted with lines folded for easier reading.
  In HTML documents click the [-] image for a flat, copy-paste version. Click
  the [+] image for an expanded, line-wrapped version. &gt; /dev/null</screen>
+
+  <para>
+   The following example should also fold in HTML:
+  </para>
+
+  <screen>
+$ mvn clean install &amp;&amp; mvn jetty:run &amp; \
+ sleep 20 ; mvn exec:java \
+ -Dexec.mainClass=org.forgerock.commons.doc.Main \
+ -Dexec.args="./Users.json ./Groups.json" ; \
+ fg
+  </screen>
+
+  <para>
+   This one, too:
+  </para>
+
+  <screen>
+C:\>curl ^
+ --header "X-OpenIDM-Username: openidm-admin" ^
+ --header "X-OpenIDM-Password: openidm-admin" ^
+ --request PUT ^
+ --data "{ ^
+ \"userName\":\"jberg\", ^
+ \"familyName\":\"Berg\", ^
+ \"givenName\":\"James\", ^
+ \"email\":\"jberg@example.com\", ^
+ \"phoneNumber\":\"5556787\", ^
+ \"description\":\"Created by OpenIDM REST.\", ^
+ \"password\":\"MyPassw0rd\" ^
+ }" ^
+ "http://localhost:8080/openidm/managed/user/jberg"
+
+{"_id":"jberg","_rev":"0"}
+  </screen>
 
  <para>Also check that the program listings have syntax highlighting.
  Not all varieties are necessarily actively highlighted, yet.</para>
