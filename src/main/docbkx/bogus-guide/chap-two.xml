@@ -49,11 +49,11 @@
   </para>
 
   <screen>
-$ mvn clean install &amp;&amp; mvn jetty:run &amp; \
+$ <userinput>mvn clean install &amp;&amp; mvn jetty:run &amp; \
  sleep 20 ; mvn exec:java \
  -Dexec.mainClass=org.forgerock.commons.doc.Main \
  -Dexec.args="./Users.json ./Groups.json" ; \
- fg
+ fg</userinput>
   </screen>
 
   <para>
@@ -61,7 +61,7 @@ $ mvn clean install &amp;&amp; mvn jetty:run &amp; \
   </para>
 
   <screen>
-C:\>curl ^
+C:\><userinput>curl ^
  --header "X-OpenIDM-Username: openidm-admin" ^
  --header "X-OpenIDM-Password: openidm-admin" ^
  --request PUT ^
@@ -74,10 +74,67 @@ C:\>curl ^
  \"description\":\"Created by OpenIDM REST.\", ^
  \"password\":\"MyPassw0rd\" ^
  }" ^
- "http://localhost:8080/openidm/managed/user/jberg"
+ "http://localhost:8080/openidm/managed/user/jberg"</userinput>
 
-{"_id":"jberg","_rev":"0"}
+<computeroutput>{"_id":"jberg","_rev":"0"}</computeroutput>
   </screen>
+
+  <para>
+   In the following example it could be hard
+   to distinguish user input from computer output.
+  </para>
+
+  <screen>
+$ <userinput>curl --request POST --header "Content-Type: application/json"
+ --data '{"username":"demo",
+     "userpassword":"password",
+     "tokenId":"M8cVqWqbKtCtpd/UqEAr0x25fxA=",
+     "confirmationId":"jrUZ3E7CK4UQJM5jnDHGNKH1UaQ="}'
+ https://openam.example.com:8443/openam/json/users?_action=forgotPasswordReset</userinput>
+<computeroutput>{
+    "name": "demo",
+    "realm": "/",
+    "uid": [
+        "demo"
+    ],
+    "mail": [
+        "demo@example.com"
+    ],
+    "sn": [
+        "demo"
+    ],
+    "userPassword": [
+        "{SSHA}zgeBu4yOAy1i9QAgnldMCzW8LWX36ViVj9leig=="
+    ],
+    "cn": [
+        "demo"
+    ],
+    "inetUserStatus": [
+        "Active"
+    ],
+    "objectClass": [
+        "devicePrintProfilesContainer",
+        "person",
+        "sunIdentityServerLibertyPPService",
+        "inetorgperson",
+        "sunFederationManagerDataStore",
+        "iPlanetPreferences",
+        "iplanet-am-auth-configuration-service",
+        "organizationalperson",
+        "sunFMSAML2NameIdentifier",
+        "inetuser",
+        "forgerock-am-dashboard-service",
+        "iplanet-am-managed-person",
+        "iplanet-am-user-service",
+        "sunAMAuthAccountLockout",
+        "top"
+    ],
+    "universalid": [
+        "id=demo,ou=user,dc=openam,dc=forgerock,dc=org"
+    ]
+}</computeroutput>
+  </screen>
+
 
  <para>Also check that the program listings have syntax highlighting.
  Not all varieties are necessarily actively highlighted, yet.</para>
