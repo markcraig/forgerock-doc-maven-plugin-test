@@ -599,10 +599,45 @@ description: This is the description for {cn}.]]></programlisting>
    Guide</citetitle>, then Olinks seem to work.</para>
   </section>
 
-  <section>
-   <title>Another Section</title>
+  <section xml:id="docs-145">
+   <title>DOCS-145: Nested ordered lists (within itemized lists) do not render correctly in the html</title>
 
-   <para>This is a section in the doc.</para>
+   <para>
+    In HTML output, items in an &lt;orderedlist> that is nested
+    inside an &lt;itemizedlist> should be numbered, not bulleted.
+   </para>
+
+   <itemizedlist>
+    <listitem>
+     <para>
+      First point in the itemized list.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Second point.
+      Now nest the ordered list:
+     </para>
+     <orderedlist>
+      <listitem>
+       <para>
+        Step 1.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Step 2.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Step 3.
+       </para>
+      </listitem>
+     </orderedlist>
+    </listitem>
+   </itemizedlist>
+
   </section>
 
   <section>
