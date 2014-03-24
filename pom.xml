@@ -165,6 +165,7 @@
      <projectName>${projectName}</projectName>
      <projectVersion>${projectVersion}</projectVersion>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
+     <latestJson>http://mcraig.org/fr/latest.php</latestJson><!-- Temp workaround pending http://docs.forgerock.org/latest.php -->
 <!--
      <excludes>
       <exclude>epub</exclude>
