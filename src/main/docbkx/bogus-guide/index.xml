@@ -62,6 +62,7 @@
  <xinclude:include href='chap-one.xml' />
  <xinclude:include href='chap-two.xml' />
  <xinclude:include href='chap-three.xml' />
+ <xinclude:include href='chap-table-layout.xml' />
 
  <glossary>
   <title>Glossary</title>
