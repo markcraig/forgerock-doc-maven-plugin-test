@@ -89,4 +89,13 @@
    xlink:href="&bookname;#chap-table-layout"
   >olink to &bookname;#chap-table-layout</link>
  </para>
+
+ <para>
+  Here is an olink using &amp;bookname;:
+  <link
+   xlink:role="http://docbook.org/xlink/role/olink"
+   xlink:href="&bookname;#non-existent-id"
+  >olink to &bookname;#non-existent-id</link>
+  (link not expected to resolve correctly)
+ </para>
 </chapter>
