@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! src/main/resources/legal-notices/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2014 ForgeRock AS
+  !
+-->
+<!DOCTYPE chapter [
+<!ENTITY company "Acme Widgets, Inc.">
+<!ENTITY product "Top Widget">
+<!ENTITY bookname "bogus-guide">
+]>
+<chapter xml:id='chap-entities'
+         xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+         xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+         xsi:schemaLocation='http://docbook.org/ns/docbook
+                     http://docbook.org/xml/5.0/xsd/docbook.xsd'
+         xmlns:xlink='http://www.w3.org/1999/xlink'>
+ <title>Test Use of XML Entities</title>
+
+ <para>
+  This file defines entities at the outset,
+  after the XML declaration and copyright statement.
+  The example is quoted from a section from
+  Bob Stayton's guide to the DocBook XSL stylesheets,
+  <link
+   xlink:show="new"
+   xlink:href="http://www.sagehill.net/docbookxsl/Db5Entities.html"
+  ><citetitle>Entities with DocBook 5</citetitle></link>,
+  with an additional example to try to use in a link attribute value.
+ </para>
+
+ <programlisting language="xml">
+<![CDATA[
+<!DOCTYPE chapter [
+<!ENTITY company "Acme Widgets, Inc.">
+<!ENTITY product "Top Widget">
+<!ENTITY bookname "bogus-guide">
+]>
+]]>
+ </programlisting>
+
+ <para>
+  The following items show how the entities resolve in normal text.
+ </para>
+
+ <itemizedlist>
+  <listitem>
+   <para>
+    &amp;company; becomes &company;
+   </para>
+  </listitem>
+
+  <listitem>
+   <para>
+    &amp;product; becomes &product;.
+   </para>
+  </listitem>
+
+  <listitem>
+   <para>
+    &amp;bookname; becomes &bookname;.
+   </para>
+  </listitem>
+ </itemizedlist>
+
+ <para>
+  Here is an olink using &amp;bookname;:
+  <link
+   xlink:role="http://docbook.org/xlink/role/olink"
+   xlink:href="&bookname;#chap-table-layout"
+  >olink to &bookname;#chap-table-layout</link>
+ </para>
+</chapter>
