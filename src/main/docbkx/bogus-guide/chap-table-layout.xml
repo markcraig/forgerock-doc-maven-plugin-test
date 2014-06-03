@@ -34,13 +34,13 @@
   A table of OpenICF connector operation options follows.
  </para>
 
- <table xml:id="operation-options-name-version">
+ <table xml:id="operation-options-name-version" pgwide="1">
         <title>Operation Options</title>
         <tgroup cols="5">
             <colspec colname="c1" colwidth="1*"/>
             <colspec colname="c2" colwidth="1*"/>
             <colspec colname="c3" colwidth="1*"/>
-            <colspec colname="c4" colwidth="3*"/>
+            <colspec colname="c4" colwidth="1*"/>
             <thead>
                 <row>
                     <entry>Operation</entry>
@@ -55,32 +55,44 @@
             </thead>
             <tbody>
                 <row>
-                    <entry>
+                    <entrytbl cols="1">
+                     <tbody>
+                      <row>
+                       <entry>
                         <para xml:id="operation-authenticate-name-version"
                               xreflabel="authenticate">Authenticate</para>
-                    </entry>
-                    <entry>
-                        <para>_OperationOption-StringArray</para>
-                        <para>_OperationOption-QualifiedUid</para>
-                        <para>SORT_KEYS</para>
-                        <para>_OperationOption-Long</para>
-                        <para>_OperationOption-Double</para>
-                    </entry>
-                    <entry>
-                        <para>String[]</para>
-                        <para>QualifiedUid</para>
-                        <para>SortKey</para>
-                        <para>Long</para>
-                        <para>Double</para>
-                        <para>URI</para>
-                    </entry>
-                    <entry>
-                        <para>_OperationOption-StringArray.help</para>
-                        <para>_OperationOption-QualifiedUid.help</para>
-                        <para>Default pre-defined description in library and "Link" to it.</para>
-                        <para>_OperationOption-Long.help</para>
-                        <para>_OperationOption-Double.help</para>
-                    </entry>
+                       </entry>
+                      </row>
+                     </tbody>
+                    </entrytbl>
+                    <entrytbl cols="1">
+                     <tbody>
+                      <row><entry>_OperationOption-StringArray</entry></row>
+                      <row><entry>_OperationOption-QualifiedUid</entry></row>
+                      <row><entry>SORT_KEYS</entry></row>
+                      <row><entry>_OperationOption-Long</entry></row>
+                      <row><entry>_OperationOption-Double</entry></row>
+                     </tbody>
+                    </entrytbl>
+                    <entrytbl cols="1">
+                     <tbody>
+                      <row><entry>String[]</entry></row>
+                      <row><entry>QualifiedUid</entry></row>
+                      <row><entry>SortKey</entry></row>
+                      <row><entry>Long</entry></row>
+                      <row><entry>Double</entry></row>
+                      <row><entry>URI</entry></row>
+                     </tbody>
+                    </entrytbl>
+                    <entrytbl cols="1">
+                     <tbody>
+                      <row><entry>_OperationOption-StringArray.help</entry></row>
+                      <row><entry>_OperationOption-QualifiedUid.help</entry></row>
+                      <row><entry>Default pre-defined description in library and "Link" to it.</entry></row>
+                      <row><entry>_OperationOption-Long.help</entry></row>
+                      <row><entry>_OperationOption-Double.help</entry></row>
+                     </tbody>
+                    </entrytbl>
                 </row>
             </tbody>
         </tgroup>
