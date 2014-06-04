@@ -98,4 +98,13 @@
   >olink to &bookname;#non-existent-id</link>
   (link not expected to resolve correctly)
  </para>
+
+ <para>
+  As an alternative, the following example depends on
+  replacement of CURRENT.DOCID in the link with the current doc ID:
+  <link
+  xlink:role="http://docbook.org/xlink/role/olink"
+  xlink:href="CURRENT.DOCID#chap-table-layout"
+  >olink to CURRENT.DOCID #chap-table-layout</link>.
+ </para>
 </chapter>
