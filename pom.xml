@@ -25,7 +25,7 @@
  <parent>
   <artifactId>forgerock-parent</artifactId>
   <groupId>org.forgerock</groupId>
-  <version>1.1.0</version>
+  <version>1.2.1</version>
  </parent>
 
  <groupId>commons.forgerock.org</groupId>
