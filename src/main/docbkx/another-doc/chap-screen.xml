@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! src/main/resources/legal-notices/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2012-2014 ForgeRock AS
+  !
+-->
+<chapter xml:id='chap-one'
+         xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+         xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+         xsi:schemaLocation='http://docbook.org/ns/docbook
+                     http://docbook.org/xml/5.0/xsd/docbook.xsd'>
+ <title>&lt;Screen> Content</title>
+
+ <para>
+  This short chapter has some &lt;screen> elements to format.
+ </para>
+
+ <screen>
+$ <userinput>This is user input.</userinput>
+<computeroutput>This is computer output.</computeroutput>
+ </screen>
+
+ <screen>
+$ <userinput>This is user input with a <replaceable>replaceable</replaceable> element.</userinput>
+<computeroutput>This is computer output with a <replaceable>replaceable</replaceable> element.</computeroutput>
+ </screen>
+
+ <para>
+  This is a &lt;screen> without user input and computer output elements,
+  but with one replaceable element, <replaceable>opendj-install-directory</replaceable>.
+ </para>
+
+ <screen>
+$ ls -1 <replaceable>opendj-install-directory</replaceable>
+Legal
+QuickSetup.app
+README
+Uninstall.app
+bak
+bat
+bin
+changelogDb
+classes
+config
+db
+example-plugin.zip
+import-tmp
+ldif
+legal-notices
+lib
+locks
+logs
+opendj_logo.png
+setup
+setup.bat
+snmp
+template
+uninstall
+uninstall.bat
+upgrade
+upgrade.bat
+ </screen>
+</chapter>
