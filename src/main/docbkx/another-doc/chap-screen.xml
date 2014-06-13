@@ -39,13 +39,17 @@ $ <userinput>This is user input.</userinput>
 <computeroutput>This is computer output.</computeroutput>
  </screen>
 
+ <para>
+  Now some examples with <replaceable>replaceable</replaceable> elements.
+ </para>
+
  <screen>
 $ <userinput>This is user input with a <replaceable>replaceable</replaceable> element.</userinput>
 <computeroutput>This is computer output with a <replaceable>replaceable</replaceable> element.</computeroutput>
  </screen>
 
  <para>
-  This is a &lt;screen> without user input and computer output elements,
+  Below is a &lt;screen> without user input and computer output elements,
   but with one replaceable element, <replaceable>opendj-install-directory</replaceable>.
  </para>
 
