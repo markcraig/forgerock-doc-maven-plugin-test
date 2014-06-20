@@ -784,6 +784,7 @@ description: This is the description for {cn}.]]></programlisting>
 
  <xinclude:include href='chap-jcite.xml' />
  <xinclude:include href='chap-screen.xml' />
+ <xinclude:include href='chap-page-break.xml' />
 
  <index />
 </book>
