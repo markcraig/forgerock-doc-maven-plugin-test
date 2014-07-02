@@ -51,4 +51,16 @@
 $ <userinput>This fake command has a long URL \
  https://long.example.com:8443/app/json/container?_queryFilter=userName+eq+"bjensen@example.com"&amp;_fields=displayName,contactInformation/emailAddress&amp;_prettyPrint=true</userinput>
  </screen>
+
+ <para>
+  This next &lt;screen> includes some links of varying lengths:
+ </para>
+
+ <screen width="168">
+$ <userinput>This fake command has a long URL \
+ https://long.example.com:8443/app/json/container?_queryFilter=userName+eq+"bjensen@example.com"&amp;_fields=displayName,contactInformation/emailAddress&amp;_prettyPrint=true
+ https://long.example.com:8443/app/json/container?_queryFilter=userName+eq+"bjensen@example.com"
+ https://short.example.com:8443/?cat=minou&amp;cat=cleo
+ https://short.example.com:8443/</userinput>
+ </screen>
 </chapter>
