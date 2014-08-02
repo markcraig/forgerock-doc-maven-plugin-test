@@ -56,12 +56,19 @@
  </licenses>
 
  <properties>
-  <projectName>ForgeRock</projectName>
-  <projectVersion>1.0.0</projectVersion>
+
+  <buildDirectory>${basedir}/build</buildDirectory>
+  <buildReleaseZip>true</buildReleaseZip>
+  <forgerockSite>http://forgerock.com</forgerockSite>
   <frDocPluginVersion>${project.version}</frDocPluginVersion>
+  <gaId>UA-xxxxxxxx-x</gaId>
   <jciteVersion>1.13.0</jciteVersion>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <gaId>UA-xxxxxxxx-x</gaId>
+  <projectName>ForgeRock</projectName>
+  <projectVersion>1.0.0</projectVersion>
+  <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
+  <releaseVersion>1.0.0</releaseVersion>
+
   <!--
     Release date and publication date are set at release build time.
       -D"releaseDate=Software release date: January 1, 1970"
@@ -73,10 +80,6 @@
   <pubDate />
   <publicationDate>${pubDate}</publicationDate>
 
-  <buildDirectory>${basedir}/build</buildDirectory>
-
-  <publishedDocBase>http://docs.forgerock.org/en/</publishedDocBase>
-  <forgerockSite>http://forgerock.com</forgerockSite>
  </properties>
 
  <inceptionYear>2012</inceptionYear>
@@ -121,51 +124,17 @@
     </configuration>
    </plugin>
 
-   <!--
-        Trying PlantUML support without
-        DOCS-35: Integrate support for text-based sequence diagram sources
-   <plugin>
-    <groupId>com.github.jeluard</groupId>
-    <artifactId>plantuml-maven-plugin</artifactId>
-    <version>1.0</version>
-    <executions>
-     <execution>
-      <id>run-plantuml</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>generate</goal>
-      </goals>
-     </execution>
-    </executions>
-    <configuration>
-     <sourceFiles>
-      <directory>${basedir}</directory>
-      <includes>
-        <include>src/main/docbkx/**/*.txt</include>
-      </includes>
-     </sourceFiles>
-     <outputInSourceDirectory>true</outputInSourceDirectory>
-     <verbose>true</verbose>
-    </configuration>
-    <dependencies>
-     <dependency>
-      <groupId>net.sourceforge.plantuml</groupId>
-      <artifactId>plantuml</artifactId>
-      <version>7993</version>
-     </dependency>
-    </dependencies>
-   </plugin>
-   -->
-
    <plugin>
     <groupId>org.forgerock.commons</groupId>
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
     <configuration>
+     <buildReleaseZip>${buildReleaseZip}</buildReleaseZip>
+     <googleAnalyticsId>${gaId}</googleAnalyticsId>
+     <latestJson>http://mcraig.org/fr/latest.php</latestJson><!-- For testing -->
      <projectName>${projectName}</projectName>
      <projectVersion>${projectVersion}</projectVersion>
-     <googleAnalyticsId>${gaId}</googleAnalyticsId>
-     <latestJson>http://mcraig.org/fr/latest.php</latestJson><!-- Temp workaround pending http://docs.forgerock.org/latest.php -->
+     <releaseVersion>${releaseVersion}</releaseVersion>
 <!--
      <excludes>
       <exclude>epub</exclude>
@@ -175,14 +144,6 @@
       <exclude>rtf</exclude>
      </excludes>
 -->
-
-     <!-- DOCS-81: evaluating docbkx-tools 2.0.15, epub and rtf break the build for now.
-     <excludes>
-      <exclude>epub</exclude>
-      <exclude>rtf</exclude>
-     </excludes>
-     -->
-
 
 <!-- Alternative branding configuration
 
@@ -194,48 +155,7 @@
     <executions>
 
      <execution>
-      <id>copy-common</id>
-      <phase>pre-site</phase>
-
-<!-- Alternative common content configuration
-
-      <configuration>
-       <commonContentGroupId>org.forgerock.commons</commonContentGroupId>
-       <commonContentArtifactId>forgerock-doc-common-content</commonContentArtifactId>
-       <commonContentVersion>1.0.0</commonContentVersion>
-      </configuration>
--->
-      <goals>
-       <goal>boilerplate</goal>
-      </goals>
-     </execution>
-
-     <execution>
-      <id>filter-sources</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>filter</goal>
-      </goals>
-     </execution>
-
-     <execution>
-      <id>run-jcite</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>jcite</goal>
-      </goals>
-     </execution>
-
-     <execution>
-      <id>prepare-sources</id>
-      <phase>pre-site</phase>
-      <goals>
-       <goal>prepare</goal>
-      </goals>
-     </execution>
-
-     <execution>
-      <id>build-doc</id>
+      <id>doc-build</id>
       <phase>pre-site</phase>
       <goals>
        <goal>build</goal>
@@ -243,21 +163,21 @@
      </execution>
 
      <execution>
-      <id>layout-doc</id>
+      <id>doc-site</id>
       <phase>site</phase>
-<!--
-      <configuration>
-       <buildReleaseZip>true</buildReleaseZip>
-       <releaseVersion>1.0.0</releaseVersion>
-      </configuration>
--->
       <goals>
-       <goal>layout</goal>
-<!--
-       <goal>release</goal>
--->
+       <goal>site</goal>
       </goals>
      </execution>
+
+     <execution>
+      <id>doc-release</id>
+      <phase>site</phase>
+      <goals>
+       <goal>release</goal>
+      </goals>
+     </execution>
+
     </executions>
    </plugin>
 
@@ -278,28 +198,6 @@
       <version>1.3</version>
      </dependency>
     </dependencies>
-   </plugin>
--->
-
-<!-- Uncomment to generate .zip without depending on the doc build plugin.
-   <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-assembly-plugin</artifactId>
-    <configuration>
-     <finalName>${projectName}-${releaseVersion}</finalName>
-     <descriptors>
-      <descriptor>src/main/assembly/zip.xml</descriptor>
-     </descriptors>
-    </configuration>
-    <executions>
-     <execution>
-      <id>make-assembly</id>
-      <phase>post-site</phase>
-      <goals>
-       <goal>single</goal>
-      </goals>
-     </execution>
-    </executions>
    </plugin>
 -->
 
