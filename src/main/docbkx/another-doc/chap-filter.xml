@@ -46,11 +46,11 @@
  </para>
 
  <programlisting language="javascript">
-  <xinclude:include href="../shared/DOCS-178.json" parse="text">
-   <xinclude:fallback>
-    Failed to include file.
-   </xinclude:fallback>
-  </xinclude:include>
+<xinclude:include href="../shared/DOCS-178.json" parse="text">
+ <xinclude:fallback>
+  Failed to include file.
+ </xinclude:fallback>
+</xinclude:include>
  </programlisting>
 
  <para>
@@ -58,11 +58,11 @@
  </para>
 
  <programlisting language="none">
-  <xinclude:include href="../shared/DOCS-178.txt" parse="text">
-   <xinclude:fallback>
-    Failed to include file.
-   </xinclude:fallback>
-  </xinclude:include>
+<xinclude:include href="../shared/DOCS-178.txt" parse="text">
+ <xinclude:fallback>
+  Failed to include file.
+ </xinclude:fallback>
+</xinclude:include>
  </programlisting>
 
  <para>
