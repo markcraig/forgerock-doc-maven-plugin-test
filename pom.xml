@@ -135,6 +135,8 @@
      <projectName>${projectName}</projectName>
      <projectVersion>${projectVersion}</projectVersion>
      <releaseVersion>${releaseVersion}</releaseVersion>
+
+     <overwriteProjectFilesWithSharedContent>false</overwriteProjectFilesWithSharedContent>
 <!--
      <excludes>
       <exclude>epub</exclude>

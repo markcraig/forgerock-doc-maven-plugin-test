@@ -20,18 +20,19 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2011-2012 ForgeRock AS
+  !      Copyright 2011-2014 ForgeRock AS
   !    
 -->
-<legalnotice
- xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
- xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
- xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
- xmlns:xlink='http://www.w3.org/1999/xlink'
- xmlns:xinclude='http://www.w3.org/2001/XInclude'><?dbhtml
+<legalnotice xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+             xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+             xsi:schemaLocation='http://docbook.org/ns/docbook
+                                 http://docbook.org/xml/5.0/xsd/docbook.xsd'
+             xmlns:xlink='http://www.w3.org/1999/xlink'><?dbhtml
  filename='legalnotice.html'?>
 
- <para>If you can see this legal notice, good.</para>
+ <para>
+  This should not be overwritten if &lt;overwriteProjectFilesWithSharedContent> is false.
+ </para>
 
  <mediaobject>
   <imageobject>
