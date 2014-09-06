@@ -75,6 +75,16 @@
    </varlistentry>
   </variablelist>
  </section>
+
+ <section xml:id="link-to-resources">
+  <title>Link to Arbitrary Resource</title>
+
+  <para>
+   Will this link to a bunch of
+   <link xlink:href="../resources/lorem-ipsum.txt">lorem ipsum</link>
+   work?
+  </para>
+ </section>
  
  <section xml:id="section-one">
   <title>A Section Mentioned in the Index</title>

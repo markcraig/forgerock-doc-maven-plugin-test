@@ -59,6 +59,7 @@
 
   <buildDirectory>${basedir}/build</buildDirectory>
   <buildReleaseZip>true</buildReleaseZip>
+  <copyResourceFiles>true</copyResourceFiles>
   <forgerockSite>http://forgerock.com</forgerockSite>
   <frDocPluginVersion>${project.version}</frDocPluginVersion>
   <gaId>UA-xxxxxxxx-x</gaId>
@@ -130,6 +131,7 @@
     <version>${frDocPluginVersion}</version>
     <configuration>
      <buildReleaseZip>${buildReleaseZip}</buildReleaseZip>
+     <copyResourceFiles>${copyResourceFiles}</copyResourceFiles>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
      <latestJson>http://mcraig.org/fr/latest.php</latestJson><!-- For testing -->
      <projectName>${projectName}</projectName>
