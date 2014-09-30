@@ -34,7 +34,7 @@
   The following example cites part of a JSON file.</para>
 
  <programlisting language="javascript">
-  [DOCS-149:start:end]
+  [DOCS-149.json:start:end]
  </programlisting>
 
  <para>
