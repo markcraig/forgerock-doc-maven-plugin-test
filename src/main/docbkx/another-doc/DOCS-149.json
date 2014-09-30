@@ -1,0 +1,15 @@
+{
+    "comment0": "start",
+    "object": {
+        "number": 42,
+        "array": [
+            1,
+            2,
+            3
+        ],
+        "map": {
+            "key": "&value"
+        }
+    },
+    "comment1": "end"
+}
