@@ -206,6 +206,37 @@
    </plugin>
 -->
 
+   <!-- Test for DOCS-213 -->
+   <plugin>
+    <groupId>org.forgerock.maven.plugins</groupId>
+    <artifactId>linktester-maven-plugin</artifactId>
+    <version>1.2.0</version>
+    <inherited>false</inherited>
+    <executions>
+     <execution>
+      <goals>
+       <goal>check</goal>
+      </goals>
+      <phase>site</phase>
+     </execution>
+    </executions>
+    <configuration>
+     <includes>
+      <include>**/index.xml</include>
+     </includes>
+     <validating>true</validating>
+     <xIncludeAware>true</xIncludeAware>
+     <failOnError>false</failOnError>
+     <skipOlinks>false</skipOlinks>
+     <skipUrls>false</skipUrls>
+     <skipUrlPatterns>
+      <skipUrlPattern>^https://bugster.forgerock.org/jira/browse/OPEN(AM|ICF|IDM|IG|DJ)-[0-9]{1,4}$</skipUrlPattern>
+      <skipUrlPattern>^http://tools.ietf.org/html/rfc[0-9]+$</skipUrlPattern>
+     </skipUrlPatterns>
+     <outputFile>linktester.err</outputFile>
+    </configuration>
+   </plugin>
+
    <!-- Remove spuriously generated target directory. -->
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
