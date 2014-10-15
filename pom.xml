@@ -221,7 +221,7 @@
      </execution>
     </executions>
     <configuration>
-     <baseDir>${project.build.directory}/docbkx-sources</baseDir>
+     <directory>${project.build.directory}/docbkx-sources</directory>
      <includes>
       <include>**/index.xml</include>
      </includes>
