@@ -206,7 +206,7 @@
    </plugin>
 -->
 
-   <!-- Test for DOCS-213, and docbook-linktester 1.3.0-SNAPSHOT baseDir config
+   <!-- Test for DOCS-213, and docbook-linktester 1.3.0-SNAPSHOT directory config
    <plugin>
     <groupId>org.forgerock.maven.plugins</groupId>
     <artifactId>linktester-maven-plugin</artifactId>
