@@ -98,9 +98,9 @@
    <id>forgerock-snapshots-repository</id>
    <name>ForgeRock Snapshot Repository</name>
    <url>http://maven.forgerock.org/repo/snapshots</url>
-   <snapshots>
-    <enabled>true</enabled>
-   </snapshots>
+   <releases>
+    <enabled>false</enabled>
+   </releases>
   </repository>
  </repositories>
 
