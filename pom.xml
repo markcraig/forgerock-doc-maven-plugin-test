@@ -64,6 +64,7 @@
   <frDocPluginVersion>${project.version}</frDocPluginVersion>
   <gaId>UA-xxxxxxxx-x</gaId>
   <jciteVersion>1.13.0</jciteVersion>
+  <!--linkTesterVersion>1.3.0-SNAPSHOT</linkTesterVersion-->
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <projectName>ForgeRock</projectName>
   <projectVersion>1.0.0</projectVersion>
@@ -211,7 +212,7 @@
     <groupId>org.forgerock.maven.plugins</groupId>
     <artifactId>linktester-maven-plugin</artifactId>
     <version>1.3.0-SNAPSHOT</version>
-    <inherited>false</inherited>
+    <inherited>true</inherited>
     <executions>
      <execution>
       <goals>
@@ -221,10 +222,13 @@
      </execution>
     </executions>
     <configuration>
-     <directory>${project.build.directory}/docbkx-sources</directory>
-     <includes>
-      <include>**/index.xml</include>
-     </includes>
+     <docSources>
+      <docSource>
+       <includes>
+        <include>**/index.xml</include>
+       </includes>
+      </docSource>
+     </docSources>
      <validating>true</validating>
      <xIncludeAware>true</xIncludeAware>
      <failOnError>false</failOnError>
