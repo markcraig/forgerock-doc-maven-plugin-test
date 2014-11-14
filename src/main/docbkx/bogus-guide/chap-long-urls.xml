@@ -39,7 +39,7 @@
 
  <para>
   This para includes a link with a long URL:
-  <link xlink:href='https://long.example.com:8443/app/json/container?_queryFilter =userName+eq+"bjensen@example.com"&amp;_fields=displayName,contactInformation/emailAddress&amp;_prettyPrint=true' />.
+  <link xlink:href='https://long.example.com:8443/app/json/container?_queryFilter=userName+eq+"bjensen@example.com"&amp;_fields=displayName,contactInformation/emailAddress&amp;_prettyPrint=true' />.
  </para>
 
  <para>
