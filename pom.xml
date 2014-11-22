@@ -157,6 +157,12 @@
      <brandingArtifactId>forgerock-doc-default-branding</brandingArtifactId>
      <brandingVersion>1.0.1</brandingVersion>
 -->
+
+     <!-- Test for DOCS-237 -->
+     <skipUrlPatterns>
+      <skipUrlPattern>^http://docs.forgerock.org/.*$</skipUrlPattern>
+     </skipUrlPatterns>
+
     </configuration>
     <executions>
 
