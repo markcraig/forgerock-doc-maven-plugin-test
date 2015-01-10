@@ -13,7 +13,7 @@
 !
 ! MPL 2.0 HEADER END
 !
-!     Copyright 2012-2014 ForgeRock AS
+!     Copyright 2012-2015 ForgeRock AS
 !
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -165,6 +165,14 @@
 
     </configuration>
     <executions>
+
+     <execution>
+      <id>pre-process</id>
+      <phase>pre-site</phase>
+      <goals>
+       <goal>process</goal>
+      </goals>
+     </execution>
 
      <execution>
       <id>doc-build</id>
