@@ -13,7 +13,7 @@
 !
 ! MPL 2.0 HEADER END
 !
-!     Copyright 2012-2015 ForgeRock AS
+!     Copyright 2012-2015 ForgeRock AS.
 !
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -130,6 +130,9 @@
     <groupId>org.forgerock.commons</groupId>
     <artifactId>forgerock-doc-maven-plugin</artifactId>
     <version>${frDocPluginVersion}</version>
+<!--
+    <extensions>true</extensions>
+-->
     <configuration>
      <buildReleaseZip>${buildReleaseZip}</buildReleaseZip>
      <copyResourceFiles>${copyResourceFiles}</copyResourceFiles>
