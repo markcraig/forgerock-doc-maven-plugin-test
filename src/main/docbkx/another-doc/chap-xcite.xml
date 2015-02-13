@@ -20,14 +20,15 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2014 ForgeRock AS
+  !      Copyright 2014-2015 ForgeRock AS.
   !    
 -->
 <chapter xml:id="chap-xcite"
          xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://docbook.org/ns/docbook
-                             http://docbook.org/xml/5.0/xsd/docbook.xsd">
+                             http://docbook.org/xml/5.0/xsd/docbook.xsd"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Including Arbitrary Examples By Using XCite</title>
 
  <para>
@@ -43,5 +44,14 @@
 
  <programlisting language="xml">
   [../shared/man-test.xml%marker]
+ </programlisting>
+
+ <para>
+  A test for
+  <link xlink:href="https://bugster.forgerock.org/jira/browse/DOCS-259">DOCS-259</link>:
+ </para>
+
+ <programlisting language="javascript">
+return [ {"policyRequirement": "NOT_NULL"}];
  </programlisting>
 </chapter>
