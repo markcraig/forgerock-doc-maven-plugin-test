@@ -166,6 +166,17 @@
       <skipUrlPattern>^http://docs.forgerock.org/.*$</skipUrlPattern>
      </skipUrlPatterns>
 
+     <backstageProductName>ForgeRock Doc Tools</backstageProductName>
+     <artifactItems>
+      <artifactItem>
+       <groupId>org.forgerock.commons</groupId>
+       <artifactId>forgerock-doc-maven-plugin</artifactId>
+       <version>${project.version}</version>
+       <classifier>javadoc</classifier>
+       <outputDirectory>javadoc</outputDirectory>
+       <title>ForgeRock Doc Maven Plugin ${project.version} Javadoc</title>
+      </artifactItem>
+     </artifactItems>
     </configuration>
     <executions>
 
@@ -198,6 +209,14 @@
       <phase>site</phase>
       <goals>
        <goal>release</goal>
+      </goals>
+     </execution>
+
+     <execution>
+      <id>doc-backstage</id>
+      <phase>site</phase>
+      <goals>
+       <goal>backstage</goal>
       </goals>
      </execution>
 
