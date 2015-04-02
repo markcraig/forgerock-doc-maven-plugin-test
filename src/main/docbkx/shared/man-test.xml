@@ -20,17 +20,16 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2012 ForgeRock AS
+  !      Copyright 2012-2015 ForgeRock AS.
   !    
 -->
 <refentry xml:id='man-test'
- xmlns='http://docbook.org/ns/docbook'
- version='5.0' xml:lang='en'
- xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
- xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
- xmlns:xlink='http://www.w3.org/1999/xlink'
- xmlns:xinclude='http://www.w3.org/2001/XInclude'>
- <info><copyright><year>2012</year><holder>ForgeRock AS</holder></copyright></info>
+          xmlns='http://docbook.org/ns/docbook'
+          version='5.0' xml:lang='en'
+          xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+          xsi:schemaLocation='http://docbook.org/ns/docbook
+                              http://docbook.org/xml/5.0/xsd/docbook.xsd'>
+ <info><copyright><year>2012-2015</year><holder>ForgeRock AS.</holder></copyright></info>
  <refmeta>
   <refentrytitle>test</refentrytitle><manvolnum>1</manvolnum>
   <refmiscinfo class="software">ForgeRock</refmiscinfo>
@@ -51,7 +50,21 @@
  <refsect1 xml:id="meaningless-mumblings">
   <title>Description</title>
   <para>This is a test.</para>
+
+   <para>
+     This utility can be used to measure bind throughput and response time of a directory service using user-defined bind or search-then-bind operations.</para>
+<para>Format strings may be used in the bind DN option as well as the authid and authzid SASL bind options. A search operation may be used to retrieve the bind DN by specifying the base DN and a filter. The retrieved entry DN will be appended as the last argument in the argument list when evaluating format strings.</para>
+<para>Example (bind only):</para>
+<para>  authrate -p 1389 -D "uid=user.%d,ou=people,dc=example,dc=com" \</para>
+<para>     -w password -f -c 10 -g "rand(0,2000)"</para>
+<para></para>
+<para>Example (search then bind):</para>
+<para></para>
+<para>  authrate -p 1389 -D '%2$s' -w password -f -c 10 \</para>
+<para>    -b "ou=people,dc=example,dc=com" -s one -g "rand(0,2000)" "(uid=user.%d)"
+   </para>
  </refsect1>
+
  <refsect1>
   <title>Options</title>
   <para>The following options are supported.</para>
@@ -60,6 +73,15 @@
     <term><option>-h | --help</option></term>
     <listitem>
      <para>Display the usage message.</para>
+
+          <para>
+            Argument used to evaluate the Java style format strings in program parameters (ie. Base DN, Search Filter). The set of all arguments provided form the the argument list in order. Besides static string arguments, they can be generated per iteration with the following functions:</para>
+<para>"inc({filename})" Consecutive, incremental line from file</para>
+<para>"inc({min},{max})" Consecutive, incremental number</para>
+<para>"rand({filename})" Random line from file</para>
+<para>"rand({min},{max})" Random number</para>
+<para>"randstr({length},_charSet_)" Random string of specified length and optionally from characters in the charSet string. A range of character can be specified with [start-end] charSet notation. If no charSet is specified, the default charSet of [A-Z][a-z][0-9] will be used
+          </para>
     </listitem>
    </varlistentry>
   </variablelist>
