@@ -47,6 +47,20 @@
  </programlisting>
 
  <para>
+  The paths can be interpreted in strange ways if you go too far up
+  because the files are first copied under
+  <filename><replaceable>project.build.directory</replaceable>/docbkx-sources/</filename>
+  before XCite is run on them.
+  In the following example, the file is <filename>../../../../.git/config</filename>
+  relative to the actual source, but <filename>../../../.git/config</filename>
+  relative to the copy of the source.
+ </para>
+
+ <programlisting language="ini">
+  [../../../.git/config]
+ </programlisting>
+
+ <para>
   A test for
   <link xlink:href="https://bugster.forgerock.org/jira/browse/DOCS-259">DOCS-259</link>:
  </para>
