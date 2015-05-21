@@ -177,6 +177,15 @@
        <title>ForgeRock Doc Maven Plugin ${project.version} Javadoc</title>
       </artifactItem>
      </artifactItems>
+
+     <!-- Conditional text for DOCS-296 -->
+     <inclusions>
+      <os>macosx linux</os>
+     </inclusions>
+     <exclusions>
+      <condition>draft</condition>
+      <invalid>ignore this</invalid>
+     </exclusions>
     </configuration>
     <executions>
 

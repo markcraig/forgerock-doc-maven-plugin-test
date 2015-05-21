@@ -797,6 +797,7 @@ description: This is the description for {cn}.]]></programlisting>
  <xinclude:include href='chap-page-break.xml' />
  <xinclude:include href='chap-filter.xml' />
  <xinclude:include href="chap-tables.xml" />
+ <xinclude:include href="chap-conditional-text.xml" />
 
  <index />
 </book>
