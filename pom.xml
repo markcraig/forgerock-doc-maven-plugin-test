@@ -174,7 +174,7 @@
        <version>${project.version}</version>
        <classifier>javadoc</classifier>
        <outputDirectory>javadoc</outputDirectory>
-       <title>ForgeRock Doc Maven Plugin ${project.version} Javadoc</title>
+       <title>ForgeRock Doc Maven Plugin Javadoc</title>
       </artifactItem>
      </artifactItems>
 
