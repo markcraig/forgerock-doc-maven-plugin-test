@@ -296,6 +296,12 @@
      <olink targetdoc="another-doc" targetptr="another-section" />
     </para>
    </listitem>
+
+   <listitem>
+    <para>
+     <olink targetdoc="bogus-guide" targetptr="broken-link" />
+    </para>
+   </listitem>
   </itemizedlist>
  </section>
 
