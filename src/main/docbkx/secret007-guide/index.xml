@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2013-2014 ForgeRock AS
+  !      Copyright 2013-2015 ForgeRock AS.
   !    
 -->
 <book xml:id='secret007-guide'
@@ -35,8 +35,8 @@
    <para>Another doc for testing the <literal>forgerock-doc-maven-plugin</literal>.</para>
   </abstract>
   <copyright>
-   <year>2013-2014</year>
-   <holder>ForgeRock AS</holder>
+   <year>2013-2015</year>
+   <holder>ForgeRock AS.</holder>
   </copyright>
   <authorgroup>
    <author>
@@ -53,57 +53,5 @@
 
  <toc />
 
- <chapter xml:id="tiny-chapter">
-  <title>Really Short Chapter</title>
-
-  <para>
-   Here is a generated sequence diagram.
-  </para>
-
-  <mediaobject xml:id="figure-openid-connect-basic">
-   <alt>Generated sequence diagram</alt>
-   <imageobject>
-    <imagedata fileref="images/openid-connect-basic.png" format="PNG" />
-   </imageobject>
-   <textobject>
-    <para>
-     The sequence diagram is described in images/openid-connect-basic.txt.
-    </para>
-   </textobject>
-  </mediaobject>
-
-  <para>
-   Here is a generated sequence diagram that is long and narrow.
-  </para>
-
-  <mediaobject xml:id="figure-long-image">
-   <alt>A Long Narrow Sequence Diagram</alt>
-   <imageobject>
-    <imagedata fileref="images/long-image.png" format="PNG" depth="5in" contentwidth="100%" />
-   </imageobject>
-   <textobject>
-    <para>
-     The sequence diagram is described in images/long-image.txt.
-    </para>
-   </textobject>
-  </mediaobject>
-<!--
-
-  <para>
-   Here is another tall image, one that is not generated, but comes from DOCS-124.
-  </para>
-
-  <mediaobject xml:id="figure-tall-image">
-   <alt>A Tall Narrow Flow Diagram</alt>
-   <imageobject>
-    <imagedata fileref="images/tall-image.png" format="PNG" />
-   </imageobject>
-   <textobject>
-    <para>
-     This image is not generated.
-    </para>
-   </textobject>
-  </mediaobject>
--->
- </chapter>
+ <xinclude:include href="chap-images.xml" />
 </book>
