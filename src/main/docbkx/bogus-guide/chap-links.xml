@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2015 ForgeRock AS.
+  !
+-->
+<chapter xml:id="chap-links"
+         xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://docbook.org/ns/docbook
+                     http://docbook.org/xml/5.0/xsd/docbook.xsd"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Links</title>
+
+ <para>
+  Test the following links:
+ </para>
+
+ <itemizedlist>
+  <listitem>
+   <para>
+    <literal>&lt;link xlink:href="https://forgerock.org/" /></literal>:
+    <link xlink:href="https://forgerock.org/" />
+   </para>
+  </listitem>
+
+  <listitem>
+   <para>
+    <literal>&lt;olink targetdoc="another-doc" targetptr="chap-filter" /></literal>:
+    <olink targetdoc="another-doc" targetptr="chap-filter" />
+   </para>
+  </listitem>
+
+  <listitem>
+   <para>
+    <literal>&lt;xref linkend="chap-entities" /></literal>:
+    <xref linkend="chap-entities" />
+   </para>
+  </listitem>
+ </itemizedlist>
+</chapter>
