@@ -678,8 +678,9 @@ description: This is the description for {cn}.]]></programlisting>
 
     <para>Follow these steps.</para>
 
-    <step>
+    <step performance="optional">
      <para>Take a step forward.</para>
+     <para>This is <literal>performance="optional"</literal>.</para>
     </step>
     <step>
      <para>Take a step back.</para>
