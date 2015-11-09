@@ -66,11 +66,12 @@
  <xinclude:include href='chap-entities.xml' />
  <xinclude:include href='chap-long-urls.xml' />
  <xinclude:include href="chap-links.xml" />
+ <xinclude:include href="chap-glossref.xml" />
 
  <glossary>
   <title>Glossary</title>
   <glossdiv>
-   <glossentry>
+   <glossentry xml:id="gloss-test">
     <glossterm>test</glossterm>
     <glossdef>
      <para>Procedure intended to establish the quality of something before it
