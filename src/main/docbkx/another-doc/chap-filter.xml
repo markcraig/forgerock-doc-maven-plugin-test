@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2014 ForgeRock AS
+  !      Copyright 2014-2015 ForgeRock AS.
   !
 -->
 <chapter xml:id='chap-filter'
@@ -77,4 +77,10 @@
 </project>
 ]]>
  </programlisting>
+
+ <para>
+  The following is an example that was failing in OpenIDM docs:
+ </para>
+
+ <screen>$ unzip openicf-zip-${openicf.remoteconnectorserver.version}.zip</screen>
 </chapter>

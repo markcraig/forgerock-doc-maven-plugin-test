@@ -82,6 +82,7 @@
   <pubDate />
   <publicationDate>${pubDate}</publicationDate>
 
+  <openicf.remoteconnectorserver.version>1.5.0.0</openicf.remoteconnectorserver.version>
  </properties>
 
  <inceptionYear>2012</inceptionYear>
