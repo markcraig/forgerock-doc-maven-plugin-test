@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2012-2015 ForgeRock AS.
+  !      Copyright 2012-2016 ForgeRock AS.
   !    
 -->
 <chapter xml:id='chap-one'
@@ -83,6 +83,13 @@
    Will this link to a bunch of
    <link xlink:href="../resources/lorem-ipsum.txt">lorem ipsum</link>
    work?
+  </para>
+
+  <para>
+   How about if the link has
+   <link
+    xlink:href="../resources/lorem-ipsum.txt"
+    xlink:type="resource">xlink:type="resource"</link>?
   </para>
  </section>
  
