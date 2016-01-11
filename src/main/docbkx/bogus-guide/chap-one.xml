@@ -91,6 +91,14 @@
     xlink:href="../resources/lorem-ipsum.txt"
     xlink:type="resource">xlink:type="resource"</link>?
   </para>
+
+  <para>
+   How about if the link has
+   <link
+    xlink:href="../resources/lorem-ipsum.txt"
+    xlink:role="http://forgerock.com/xlink/role/resource"
+   >xlink:role="http://forgerock.com/xlink/role/resource"</link>?
+  </para>
  </section>
  
  <section xml:id="section-one">
