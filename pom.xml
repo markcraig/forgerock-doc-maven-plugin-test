@@ -13,7 +13,7 @@
 !
 ! MPL 2.0 HEADER END
 !
-!     Copyright 2012-2015 ForgeRock AS.
+!     Copyright 2012-2016 ForgeRock AS.
 !
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -30,7 +30,7 @@
 
  <groupId>commons.forgerock.org</groupId>
  <artifactId>forgerock-doc-maven-plugin-test</artifactId>
- <version>4.0.0-SNAPSHOT</version>
+ <version>1.0.0-SNAPSHOT</version>
  <packaging>pom</packaging>
 
  <name>ForgeRock Doc Build Maven Plugin Test</name>
@@ -61,7 +61,7 @@
   <buildReleaseZip>true</buildReleaseZip>
   <copyResourceFiles>true</copyResourceFiles>
   <forgerockSite>http://forgerock.com</forgerockSite>
-  <frDocPluginVersion>${project.version}</frDocPluginVersion>
+  <frDocPluginVersion>3.2.0-SNAPSHOT</frDocPluginVersion>
   <gaId>UA-xxxxxxxx-x</gaId>
   <jciteVersion>1.13.0</jciteVersion>
   <!--linkTesterVersion>1.3.0-SNAPSHOT</linkTesterVersion-->
@@ -139,7 +139,7 @@
      <copyResourceFiles>${copyResourceFiles}</copyResourceFiles>
      <googleAnalyticsId>${gaId}</googleAnalyticsId>
      <latestJson>http://mcraig.org/fr/latest.php</latestJson><!-- For testing -->
-     <projectName>${projectName}</projectName>
+     <projectName>ForgeRock Doc Tools</projectName>
      <projectVersion>${projectVersion}</projectVersion>
      <releaseVersion>${releaseVersion}</releaseVersion>
 
@@ -179,7 +179,7 @@
       <skipUrlPattern>^http://docs.forgerock.org/.*$</skipUrlPattern>
      </skipUrlPatterns>
 
-     <backstageProductName>ForgeRock Doc Tools</backstageProductName>
+<!--
      <artifactItems>
       <artifactItem>
        <groupId>org.forgerock.commons</groupId>
@@ -190,6 +190,7 @@
        <title>ForgeRock Doc Maven Plugin Javadoc</title>
       </artifactItem>
      </artifactItems>
+-->
 
      <!-- Conditional text for DOCS-296 -->
      <inclusions>
