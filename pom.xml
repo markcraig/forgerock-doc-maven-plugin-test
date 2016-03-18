@@ -61,7 +61,7 @@
   <buildReleaseZip>true</buildReleaseZip>
   <copyResourceFiles>true</copyResourceFiles>
   <forgerockSite>http://forgerock.com</forgerockSite>
-  <frDocPluginVersion>3.2.0-SNAPSHOT</frDocPluginVersion>
+  <frDocPluginVersion>4.0.0-SNAPSHOT</frDocPluginVersion>
   <gaId>UA-xxxxxxxx-x</gaId>
   <jciteVersion>1.13.0</jciteVersion>
   <!--linkTesterVersion>1.3.0-SNAPSHOT</linkTesterVersion-->
