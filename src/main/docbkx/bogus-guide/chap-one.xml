@@ -43,7 +43,7 @@
 
   <variablelist>
    <varlistentry>
-    <term><literal>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&#36;{publishedDocBase}&lt;/link&gt;</literal></term>
+    <term><literal>&lt;link xlink:href=&quot;\${publishedDocBase}&quot;&gt;\${publishedDocBase}&lt;/link&gt;</literal></term>
     <listitem>
      <para>After Maven filtering:
      <literal><link xlink:href="${publishedDocBase}">${publishedDocBase}</link></literal></para>
@@ -51,7 +51,7 @@
    </varlistentry>
 
    <varlistentry>
-    <term><literal>&lt;link xlink:href=&quot;&#36;{publishedDocBase}&quot;&gt;&lt;?eval &#36;{publishedDocBase}?&gt;</literal></term>
+    <term><literal>&lt;link xlink:href=&quot;\${publishedDocBase}&quot;&gt;&lt;?eval \${publishedDocBase}?&gt;</literal></term>
     <listitem>
      <para>After Maven filtering:
      <literal><link xlink:href="${publishedDocBase}"><?eval ${publishedDocBase}?></link></literal></para>
@@ -59,7 +59,7 @@
    </varlistentry>
 
    <varlistentry>
-    <term><literal>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&#36;{forgerockSite}&lt;/link&gt;</literal></term>
+    <term><literal>&lt;link xlink:href=&quot;\${forgerockSite}&quot;&gt;\${forgerockSite}&lt;/link&gt;</literal></term>
     <listitem>
      <para>After Maven filtering:
      <literal><link xlink:href="${forgerockSite}">${forgerockSite}</link></literal></para>
@@ -67,7 +67,7 @@
    </varlistentry>
 
    <varlistentry>
-    <term><literal>&lt;link xlink:href=&quot;&#36;{forgerockSite}&quot;&gt;&lt;?eval &#36;{forgerockSite}?&gt;&lt;/link&gt;</literal></term>
+    <term><literal>&lt;link xlink:href=&quot;\${forgerockSite}&quot;&gt;&lt;?eval \${forgerockSite}?&gt;&lt;/link&gt;</literal></term>
     <listitem>
      <para>After Maven filtering:
      <literal><link xlink:href="${forgerockSite}"><?eval ${forgerockSite}?></link></literal></para>
